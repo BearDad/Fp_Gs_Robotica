@@ -1,0 +1,88 @@
+\documentclass[spanish]{report}
+% \usepackage{darkmode} \enabledarkmode
+\usepackage{wrapfig}
+\usepackage{enumitem}
+\input{~/git/Clase/template/preamble.tex}
+\input{~/git/Clase/template/macros.tex}
+\input{~/git/Clase/template/letterfonts.tex}
+\graphicspath{{../.figures/}}
+\title{
+\Huge{TBD}
+}
+\author{\large{Daniel Carbajales Soto - 2° CFGMIEA}}
+\date{\today}
+% \hbadness=99999
+\usepackage{microtype}
+\addbibresource{./bibliografia.bib}
+\usepackage{titling}
+\usepackage{afterpage}
+
+
+% Header and footer
+% \fancypagestyle{plain}{
+%     \fancyhf{} %Clear Everything.
+%     \fancyfoot[C]{Página \thepage\ de \pageref{LastPage} }%Page Number
+%     \renewcommand{\headrulewidth}{1pt} %0pt for no rule, 2pt thicker etc...
+%     \renewcommand{\footrulewidth}{1pt}
+%     \fancyfoot[R]{\small{Daniel Carbajales Soto}}
+%     \fancyhead[R]{\small{Cinta Transportadora con 3 Velocidades}}
+%     \fancyhead[L]{\small{\today}}
+% }
+% \pagestyle{plain}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%% Portada  %%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \setlength\droptitle {-38.5mm}                  %%%%%%%%
+% \pretitle{\begin{center}\Huge\itshape\bfseries} %%%%%%%%
+% \posttitle{\end{center}\vskip2cm}               %%%%%%%%
+% \preauthor{\begin{center}\LARGE}                %%%%%%%%
+% \postauthor{\end{center}\vfill}                 %%%%%%%%
+% \renewcommand{\maketitlehooka}{%
+% \noindent\includegraphics[width=\linewidth]{../figures_in_progres/cintas-transportadoras-industriales.jpg}\par\vskip 3cm}%              %%%%%%%%%%
+% \afterpage{%                                  %%%%%%%%%%
+%     \newgeometry{margin=0in}                  %%%%%%%%%%
+%     \maketitle                                %%%%%%%%%%
+%   \clearpage                                  %%%%%%%%%%
+%   \restoregeometry                            %%%%%%%%%%
+% }                                             %%%%%%%%%%
+% \newpage                                      %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% tableofcontents                               %%%%%%%%%%
+%  |pdfbookmark[<level>]{<tittle>}{<dest>}      %%%%%%%%%%
+% \phantomsection                               %%%%%%%%%%
+%  \pdfbookmark[section]{\contentsname}{toc}    %%%%%%%%%%
+%  \tableofcontents                             %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%% TEXT %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\fchapter{1}{Index}
+	\begin{enumerate}%[label=\alph)]
+		\item{adios} hola
+	\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%% bibliography %%%%%%%%%%%%%%%%%%%%%%%%
+% \nocite{*}                                 %%%%%%%%%%%%%
+% \printbibliography                         %%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% Last page in case there is no bibliography %%%%%%%%
+% \label{LastPage}                           %%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
