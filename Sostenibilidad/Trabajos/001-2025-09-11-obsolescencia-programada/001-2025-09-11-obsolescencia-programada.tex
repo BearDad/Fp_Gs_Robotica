@@ -1,0 +1,99 @@
+\documentclass[spanish,openany]{report}
+% \usepackage{darkmode} \enabledarkmode
+\usepackage{wrapfig}
+\usepackage{enumitem}
+\input{~/git/Clase/template/preamble.tex}
+\input{~/git/Clase/template/macros.tex}
+\input{~/git/Clase/template/letterfonts.tex}
+
+\date{\today}
+% \hbadness=99999
+\usepackage{microtype}
+% \addbibresource{./bibliografia.bib}
+\usepackage{titling}
+\usepackage{afterpage}
+
+
+% Header and footer
+% \fancypagestyle{plain}{
+%     \fancyhf{} %Clear Everything.
+%     \fancyfoot[C]{Página \thepage\ de \pageref{LastPage} }%Page Number
+%     \renewcommand{\headrulewidth}{1pt} %0pt for no rule, 2pt thicker etc...
+%     \renewcommand{\footrulewidth}{1pt}
+%     \fancyfoot[R]{\small{Daniel Carbajales Soto}}
+%     \fancyhead[R]{\small{Cinta Transportadora con 3 Velocidades}}
+%     \fancyhead[L]{\small{\today}}
+% }
+% \pagestyle{plain}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	                            PORTADA
+%----------------------------------------------------------------------------------------
+\makeportada{Obsolescencia Programada}{Daniel Carbajales Soto - 1° CFGSARI}{./imagenes/obsolescencia-programada.png}
+
+%----------------------------------------------------------------------------------------
+%                                    HEADER 
+%----------------------------------------------------------------------------------------
+\header{Obsolescencia Programada}{Daniel Carbajales Soto}{1° CFGSARI}
+%----------------------------------------------------------------------------------------
+%                               TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+% \maketoc
+
+  \phantomsection
+  \pdfbookmark[section]{\contentsname}{toc}%
+  \tableofcontents%
+  \clearpage
+%----------------------------------------------------------------------------------------
+%	                            DOCUMENT
+%----------------------------------------------------------------------------------------
+\chapter{Obsolescencia Programada}
+\begin{enumerate}%[label=\alph*)]
+    \item{¿Cómo se llamaba el cártel que limitó las horas de vida de las bombillas?}
+
+    \item{¿Cuántas horas garantizaban los fabricantes de bombillas antes de que el cártel las limitara a 1000 horas}
+
+    \item{La obsolescencia programada surgió junto con otro evento de la 1ª revolución industrial, ¿Cuál fue?}
+
+    \item{¿A qué producto actual se puede asimilar el ejemplo del Ford T y General Motors?}
+
+    \item{¿Cómo cambió la obsolescencia programada en los años 50?}
+
+    \item{¿Quién fue Brooks Steven? ¿Tuvo un papel importante para la obsolescencia programada? ¿Por qué?}
+
+    \item{¿Cuál es el problema real de la impresora por el que deja de imprimir? ¿Cómo se podría solventar el problema?}
+
+    \item{¿Qué película británica representa un científico que inventa un hilo que no se rompe ni se ensucia y es perseguido por ello? ¿Por qué crees que es perseguido?}
+
+        a
+    \item{¿Cómo aplicaron la obsolescencia programada a las medias de Nylon que en principio eran muy duraderas?}
+
+        hola que tall 
+    \item{¿Qué es el ciclo de vida de un producto?}
+
+        i am stupid bich
+    \item{¿Hay alguna forma de arreglar la impresora en vez de tirarla y comprar una nueva? ¿Cómo la arreglan en el documental?}
+
+    \item{¿Cuál era el problema del Ipod? ¿Había alguna forma de arreglarlo?}
+
+    \item{¿Por qué la obsolescencia programada de Europa o América afecta a países de África como Ghana?}
+
+\end{enumerate}
+\fchapter{1}{¿Cómo se llamaba el cártel que limitó las horas de vida de las bombillas?}
+
+
+\incfig[1]{radians}
+hola
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%% bibliography %%%%%%%%%%%%%%%%%%%%%%%%
+% \nocite{*}                                 %%%%%%%%%%%%%
+% \printbibliography                         %%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% Last page in case there is no bibliography %%%%%%%%
+% \label{LastPage}                           %%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
