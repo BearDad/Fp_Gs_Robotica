@@ -1,0 +1,120 @@
+\documentclass[spanish,openany]{report}
+% \usepackage{darkmode} \enabledarkmode
+\usepackage{wrapfig}
+\usepackage{enumitem}
+\input{~/git/Clase/template/preamble.tex}
+\input{~/git/Clase/template/macros.tex}
+\input{~/git/Clase/template/letterfonts.tex}
+
+\date{\today}
+% \hbadness=99999
+\usepackage{microtype}
+% \addbibresource{./bibliografia.bib}
+\usepackage{titling}
+\usepackage{afterpage}
+
+
+% Header and footer
+% \fancypagestyle{plain}{
+%     \fancyhf{} %Clear Everything.
+%     \fancyfoot[C]{Página \thepage\ de \pageref{LastPage} }%Page Number
+%     \renewcommand{\headrulewidth}{1pt} %0pt for no rule, 2pt thicker etc...
+%     \renewcommand{\footrulewidth}{1pt}
+%     \fancyfoot[R]{\small{Daniel Carbajales Soto}}
+%     \fancyhead[R]{\small{Cinta Transportadora con 3 Velocidades}}
+%     \fancyhead[L]{\small{\today}}
+% }
+% \pagestyle{plain}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	                            PORTADA
+%----------------------------------------------------------------------------------------
+% \makeportada{}{Daniel Carbajales Soto - 1° CFGSARI}{}
+
+%----------------------------------------------------------------------------------------
+%                                    HEADER 
+%----------------------------------------------------------------------------------------
+\header{radians}{Daniel Carbajales Soto}{1° CFGSARI}
+%----------------------------------------------------------------------------------------
+%                               TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+% \maketoc
+%----------------------------------------------------------------------------------------
+%	                            TABLES
+%----------------------------------------------------------------------------------------
+% this is just a demo in case i need to make a table
+%
+%
+%
+% \begin{tabularx}{\linewidth}{|C{2cm}|Y|Y|C{2cm}|}
+% \hline
+% \makecell{Header 1} & \makecell{Header 2 \\ with linebreak} & \makecell{Header 3} & \makecell{Header 4} \\
+% \hline
+% Row 1 & This is a long cell text that automatically wraps in the Y column & Another long cell & Short \\
+% \hline
+% Row 2 & \multirow{2}{*}{Multirow text} & More text & Short \\
+% \cline{1-1} \cline{3-4}
+% Row 3 & & Extra text & Short \\
+% \hline
+% \end{tabularx}
+
+
+%----------------------------------------------------------------------------------------
+%	                            DOCUMENT
+%----------------------------------------------------------------------------------------
+\setcolumnwidth{.55\textwidth}
+\begin{paracol}{2}
+\begin{figure}[ht]
+	\centering
+	\incfig[0.45]{radians}
+	\caption{Radianes}
+	\label{fig:radians}
+\end{figure}
+\switchcolumn
+Siendo que el tiempo se mide en segundos \(T_{(s)} \)
+podemos deducir que la frecuenci es la cantidad de veces que pasa algo en un segundo \(F = [\frac{\text{ciclos}}{\text{s}}] \) siendo \(\upomega = \text{velocidad de pulsación} = \si{\radian\per\second}\)
+a partir de la velocidad de pulsación podemos deducir que \(\upomega = \frac{2\pi}{T} \) es decir
+\(\upomega = 2\pi\text{T}\). Tambien tenemos las siguientes formulas:\hfill
+\(\text{T} = \frac{1}{f}\) \hspace{0.5cm} \(\upomega = \frac{\alpha}{\text{t}}\)\hspace{2em}
+\end{paracol}
+\begin{paracol}{2}
+	\switchcolumn
+\begin{figure}[ht]
+	\centering
+
+	\incfig[0.70]{desfase_angular}
+	\caption{Desfase angular}
+	\label{fig:desfase_angular}
+\end{figure}
+\switchcolumn
+En nuestro caso la diferencia entre los angulos en los cuales estan conectadas las fases del generador es lo que provoca que tengamos un sistema trifasico Como podemos visulizar en la imagen \ref{fig:desfase_angular}
+a partir de esta informacion podemos obtener las siguientes formulas para obtener la radian:
+
+\[\ang{90} = \frac{\pi}{2}\, \si{\radian}\]
+
+\[\ang{180} = \pi\, \si{\radian}\]
+
+\[\ang{270} = \frac{3\pi}{2}\, \si{\radian}\]
+
+\[\ang{360} = 2\pi\, \si{\radian}\]
+
+\end{paracol}
+
+\section*{Ejercicios}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%% bibliography %%%%%%%%%%%%%%%%%%%%%%%%
+% \nocite{*}                                 %%%%%%%%%%%%%
+% \printbibliography                         %%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% Last page in case there is no bibliography %%%%%%%%
+% \label{Last Page}                           %%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}

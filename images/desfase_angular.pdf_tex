@@ -1,6 +1,6 @@
 %% Creator: Inkscape 1.4.2 (ebf0e940d0, 2025-05-08), www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'radians.pdf' (pdf, eps, ps)
+%% Accompanies image file 'desfase_angular.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{391.12321472bp}%
+    \setlength{\unitlength}{452.03398132bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,11 +50,13 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.86679885)%
+  \begin{picture}(1,1)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{radians.pdf}}%
-    \put(0.64046551,0.47539683){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\alpha$\end{tabular}}}}%
-    \put(0.81543578,0.54145701){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\upomega$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{desfase_angular.pdf}}%
+    \put(0.63123704,0.71572377){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\ang{90}\end{tabular}}}}%
+    \put(0.28422513,0.655697){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\ang{180}\end{tabular}}}}%
+    \put(0.26635153,0.38585601){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\ang{270}\end{tabular}}}}%
+    \put(0.73479332,0.18667085){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\ang{360}\end{tabular}}}}%
   \end{picture}%
 \endgroup%
