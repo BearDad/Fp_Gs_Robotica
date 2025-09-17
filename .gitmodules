@@ -1,0 +1,3 @@
+[submodule "Inkscape_electric_Symbols"]
+	path = Inkscape_electric_Symbols
+	url = git@github.com:upb-lea/Inkscape_electric_Symbols.git
