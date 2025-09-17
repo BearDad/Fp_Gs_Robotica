@@ -1,0 +1,117 @@
+%% Creator: Inkscape 1.4.2 (ebf0e940d0, 2025-05-08), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'esquema_unifilar_1.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{526.60952591bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.64443428)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0.53315376,0.46792462){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0.53315376,0.4528303){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}T1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{esquema_unifilar_1.pdf}}%
+    \put(0.51590378,0.49811432){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}I>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{esquema_unifilar_1.pdf}}%
+    \put(0.53315376,0.63827579){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.53315376,0.62318147){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}L1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{esquema_unifilar_1.pdf}}%
+    \put(0.38005347,0.3008093){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}30mA\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{esquema_unifilar_1.pdf}}%
+    \put(0.87601155,0.3008093){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}30mA\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{esquema_unifilar_1.pdf}}%
+    \put(0.08032331,0.03665821){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0.08032331,0.02156388){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}T1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{esquema_unifilar_1.pdf}}%
+    \put(0.06307263,0.06684649){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}I>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{esquema_unifilar_1.pdf}}%
+    \put(0.08032331,0.20700881){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.08032331,0.19191449){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}L1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{esquema_unifilar_1.pdf}}%
+    \put(0.2528303,0.03665821){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0.2528303,0.02156388){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}T1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{esquema_unifilar_1.pdf}}%
+    \put(0.23557891,0.06684649){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}I>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{esquema_unifilar_1.pdf}}%
+    \put(0.2528303,0.20700881){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.2528303,0.19191449){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}L1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{esquema_unifilar_1.pdf}}%
+    \put(0.42533715,0.03665821){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0.42533715,0.02156388){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}T1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{esquema_unifilar_1.pdf}}%
+    \put(0.40808576,0.06684649){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}I>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{esquema_unifilar_1.pdf}}%
+    \put(0.42533715,0.20700881){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.42533715,0.19191449){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}L1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{esquema_unifilar_1.pdf}}%
+    \put(0.57628011,0.03665821){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0.57628011,0.02156388){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}T1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{esquema_unifilar_1.pdf}}%
+    \put(0.55903014,0.06684649){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}I>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{esquema_unifilar_1.pdf}}%
+    \put(0.57628011,0.20700881){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.57628011,0.19191449){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}L1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{esquema_unifilar_1.pdf}}%
+    \put(0.85660356,0.01509432){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0.85660356,-0.00000001){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}T1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{esquema_unifilar_1.pdf}}%
+    \put(0.83935359,0.04528402){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}I>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{esquema_unifilar_1.pdf}}%
+    \put(0.85660356,0.18544492){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.85660356,0.1703506){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}L1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{esquema_unifilar_1.pdf}}%
+    \put(0.98598406,0.01509432){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0.98598406,-0.00000001){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}T1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{esquema_unifilar_1.pdf}}%
+    \put(0.96873408,0.04528402){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}I>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{esquema_unifilar_1.pdf}}%
+    \put(0.98598406,0.18544492){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.98598406,0.1703506){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}L1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{esquema_unifilar_1.pdf}}%
+  \end{picture}%
+\endgroup%

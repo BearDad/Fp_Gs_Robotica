@@ -1,0 +1,127 @@
+%% Creator: Inkscape 1.4.2 (ebf0e940d0, 2025-05-08), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'ejercicio3_esquema_multifilar.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{500.512282bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,1.14101461)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{ejercicio3_esquema_multifilar.pdf}}%
+    \put(0.31538912,0.64844042){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}30mA\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{ejercicio3_esquema_multifilar.pdf}}%
+    \put(0.92093669,0.00019409){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}30mA\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{ejercicio3_esquema_multifilar.pdf}}%
+    \put(0.4240775,0.25638742){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}I>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{ejercicio3_esquema_multifilar.pdf}}%
+    \put(0.53276564,0.50869924){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0.53276564,0.1981619){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}4\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{ejercicio3_esquema_multifilar.pdf}}%
+    \put(0.4590127,0.1981619){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0.50171146,0.25638742){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}I>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{ejercicio3_esquema_multifilar.pdf}}%
+    \put(0.45513168,0.50869924){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{ejercicio3_esquema_multifilar.pdf}}%
+    \put(0.57158313,0.41165626){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Q2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{ejercicio3_esquema_multifilar.pdf}}%
+    \put(0.11354016,0.87746209){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}I>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{ejercicio3_esquema_multifilar.pdf}}%
+    \put(0.22222831,1.12977316){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0.22222831,0.81923657){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}4\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{ejercicio3_esquema_multifilar.pdf}}%
+    \put(0.14847537,0.81923657){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0.19117412,0.87746209){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}I>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{ejercicio3_esquema_multifilar.pdf}}%
+    \put(0.14459435,1.12977316){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{ejercicio3_esquema_multifilar.pdf}}%
+    \put(0.22222807,0.00019409){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}30mA\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{ejercicio3_esquema_multifilar.pdf}}%
+    \put(0.5327654,0.00019409){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}30mA\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{ejercicio3_esquema_multifilar.pdf}}%
+    \put(0.81224879,0.25638742){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}I>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{ejercicio3_esquema_multifilar.pdf}}%
+    \put(0.92093693,0.50869924){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0.92093693,0.1981619){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}4\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{ejercicio3_esquema_multifilar.pdf}}%
+    \put(0.847184,0.1981619){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0.88988275,0.25638742){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}I>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{ejercicio3_esquema_multifilar.pdf}}%
+    \put(0.84330297,0.50869924){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{ejercicio3_esquema_multifilar.pdf}}%
+    \put(0.95975442,0.41165626){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Q3\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{ejercicio3_esquema_multifilar.pdf}}%
+    \put(0.11354016,0.25638742){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}I>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{ejercicio3_esquema_multifilar.pdf}}%
+    \put(0.22222831,0.50869924){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0.22222831,0.1981619){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}4\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{ejercicio3_esquema_multifilar.pdf}}%
+    \put(0.14847537,0.1981619){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0.19117412,0.25638742){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}I>\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{ejercicio3_esquema_multifilar.pdf}}%
+    \put(0.14459435,0.50869924){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{ejercicio3_esquema_multifilar.pdf}}%
+    \put(0.22222807,0.41165626){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Q1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=24]{ejercicio3_esquema_multifilar.pdf}}%
+    \put(0.49394788,0.20107363){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}_\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=25]{ejercicio3_esquema_multifilar.pdf}}%
+    \put(0.18341055,0.76003993){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}_\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=26]{ejercicio3_esquema_multifilar.pdf}}%
+    \put(0.88211917,0.20107363){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}_\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=27]{ejercicio3_esquema_multifilar.pdf}}%
+    \put(0.261046,0.20107363){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}_\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=28]{ejercicio3_esquema_multifilar.pdf}}%
+    \put(0.18341055,0.20107363){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}_\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=29]{ejercicio3_esquema_multifilar.pdf}}%
+    \put(0.57158184,0.20107363){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}_\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=30]{ejercicio3_esquema_multifilar.pdf}}%
+    \put(0.95975313,0.20107363){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}_\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=31]{ejercicio3_esquema_multifilar.pdf}}%
+    \put(0.261046,0.76003993){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}_\end{tabular}}}}}%
+  \end{picture}%
+\endgroup%
