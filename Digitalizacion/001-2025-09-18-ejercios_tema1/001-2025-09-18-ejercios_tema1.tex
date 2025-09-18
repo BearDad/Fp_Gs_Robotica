@@ -1,0 +1,93 @@
+\documentclass[spanish,openany]{report}
+% \usepackage{darkmode} \enabledarkmode
+\usepackage{wrapfig}
+\usepackage{enumitem}
+\input{~/git/Clase/template/preamble.tex}
+\input{~/git/Clase/template/macros.tex}
+\input{~/git/Clase/template/letterfonts.tex}
+
+\date{\today}
+% \hbadness=99999
+\usepackage{microtype}
+% \addbibresource{./bibliografia.bib}
+\usepackage{titling}
+\usepackage{afterpage}
+
+
+% Header and footer
+% \fancypagestyle{plain}{
+%     \fancyhf{} %Clear Everything.
+%     \fancyfoot[C]{Página \thepage\ de \pageref{LastPage} }%Page Number
+%     \renewcommand{\headrulewidth}{1pt} %0pt for no rule, 2pt thicker etc...
+%     \renewcommand{\footrulewidth}{1pt}
+%     \fancyfoot[R]{\small{Daniel Carbajales Soto}}
+%     \fancyhead[R]{\small{Cinta Transportadora con 3 Velocidades}}
+%     \fancyhead[L]{\small{\today}}
+% }
+% \pagestyle{plain}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	                            PORTADA
+%----------------------------------------------------------------------------------------
+% \makeportada{}{Daniel Carbajales Soto - 1° CFGSARI}{}
+
+%----------------------------------------------------------------------------------------
+%                                    HEADER 
+%----------------------------------------------------------------------------------------
+\header{Digitalización}{Daniel Carbajales Soto}{1° CFGSARI}
+%----------------------------------------------------------------------------------------
+%                               TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+% \maketoc
+%----------------------------------------------------------------------------------------
+%	                            TABLES
+%----------------------------------------------------------------------------------------
+% this is just a demo in case i need to make a table
+%
+\subsubsection*{\textcolor{blue}{TU SECTOR PROFESIONAL.} Tarea. Expresión oral.}
+Accede a la página web de \href{https://bit.ly/491sErk}{correos market} y consulta el listado de los vendedores que están dados de alta en la plataforma. Realiza una selección de diez de ellos que ofrezcan algún producto relacionado con tu sector y consulta la lista de productos y la ficha del vendedor. Después plasma en una tabla, para cada uno de ellos, la siguiente información: nombre de la empresa, localización, año de fundación (si figura), personas en el equipo, tipo de productos. Tras analizar los datos recogidos, expón al resto de la clase cuáles son las conclu- siones acerca de la importancia de digitalizar la venta online a través de una página como la de Correos.
+
+%
+\begin{tabularx}{\linewidth}{|C{2cm}|Y|Y|Y|Y|}
+\hline
+\makecell{Empresa} & \makecell{localización} & \makecell{Año de fundación} & \makecell{empleados} & \makecell{empleados} \\
+\hline
+Rasmacor &  &  &  & \\
+\hline
+ & & & & \\
+\hline
+& & & & \\
+\hline
+ &  &  &  & \\
+\hline
+ & & & & \\
+\hline
+& & & & \\
+\hline
+ &  &  &  & \\
+\hline
+ & & & & \\
+\hline
+& & & & \\
+\hline
+ &  &  &  & \\
+\hline
+\end{tabularx}
+
+
+%----------------------------------------------------------------------------------------
+%	                            DOCUMENT
+%----------------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%% bibliography %%%%%%%%%%%%%%%%%%%%%%%%
+% \nocite{*}                                 %%%%%%%%%%%%%
+% \printbibliography                         %%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% Last page in case there is no bibliography %%%%%%%%
+% \label{Last Page}                           %%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
