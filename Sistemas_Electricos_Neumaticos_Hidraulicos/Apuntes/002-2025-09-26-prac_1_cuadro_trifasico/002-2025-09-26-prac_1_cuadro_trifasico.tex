@@ -1,0 +1,112 @@
+\documentclass[spanish,openany]{report}
+% \usepackage{darkmode} \enabledarkmode
+\usepackage{wrapfig}
+\usepackage{enumitem}
+\input{~/git/Clase/template/preamble.tex}
+\input{~/git/Clase/template/macros.tex}
+\input{~/git/Clase/template/letterfonts.tex}
+\graphicspath{{/home/kuma/git/Clase/Fp_Gs_Robotica/images/}}
+\setimagefolder{/home/kuma/git/Clase/Fp_Gs_Robotica/images/}
+\date{\today}
+% \hbadness=99999
+\usepackage{microtype}
+% \addbibresource{./bibliografia.bib}
+\usepackage{titling}
+\usepackage{afterpage}
+
+
+% Header and footer
+% \fancypagestyle{plain}{
+%     \fancyhf{} %Clear Everything.
+%     \fancyfoot[C]{Página \thepage\ de \pageref{LastPage} }%Page Number
+%     \renewcommand{\headrulewidth}{1pt} %0pt for no rule, 2pt thicker etc...
+%     \renewcommand{\footrulewidth}{1pt}
+%     \fancyfoot[R]{\small{Daniel Carbajales Soto}}
+%     \fancyhead[R]{\small{Cinta Transportadora con 3 Velocidades}}
+%     \fancyhead[L]{\small{\today}}
+% }
+% \pagestyle{plain}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	                            PORTADA
+%----------------------------------------------------------------------------------------
+% \makeportada{}{Daniel Carbajales Soto}{ 1° CFGS Automatización y Robótica Industrial}{}
+
+%----------------------------------------------------------------------------------------
+%                                    HEADER 
+%----------------------------------------------------------------------------------------
+\header{SEHN - Practica 1 - Cuadro Trifásico}{Daniel Carbajales Soto}{1° CFGSARI}
+%----------------------------------------------------------------------------------------
+%                               TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+% \maketoc
+%----------------------------------------------------------------------------------------
+%	                            TABLES
+%----------------------------------------------------------------------------------------
+% this is just a demo in case i need to make a table
+%
+%
+%
+% \begin{tabularx}{\linewidth}{|C{2cm}|Y|Y|C{2cm}|}
+% \hline
+% \makecell{Header 1} & \makecell{Header 2 \\ with linebreak} & \makecell{Header 3} & \makecell{Header 4} \\
+% \hline
+% Row 1 & This is a long cell text that automatically wraps in the Y column & Another long cell & Short \\
+% \hline
+% Row 2 & \multirow{2}{*}{Multirow text} & More text & Short \\
+% \cline{1-1} \cline{3-4}
+% Row 3 & & Extra text & Short \\
+% \hline
+% \end{tabularx}
+
+
+%----------------------------------------------------------------------------------------
+%	                            DOCUMENT
+%----------------------------------------------------------------------------------------
+
+
+\section*{ejemplo de representaciónn}
+Imagina que debes realizar el montaje de un cuadro de distribución para tres líneas monofásicas de 230 V, a partir de una red de 
+distribución trifásica con neutro de 400 V. La línea general debe estar protegida mediante un interruptor magnetotérmico y un
+interruptor diferencial. Además, cada una de las líneas monofásicas debe disponer de interruptores magnetotérmicos individuales. 
+Dibuja las representaciones unifilar y multifilar.
+
+\section*{Monataje del cuadro trifásico}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{cuadro_trifasico.png}
+    \caption{Monataje del cuadro trifásico}
+    \label{fig:cuadro_trifasico}
+\end{figure}
+
+\clearpage
+	
+\section*{Representación unifilar}
+\begin{figure}[h]
+    \centering
+    \incfigpdf[0.45]{SEHN_prac_1_esq_uni}
+    \caption{Representación unifilar}
+    \label{fig:cuadro_trifasico_unifilar}
+\end{figure}
+\clearpage
+\section*{Representación multifilar}
+\begin{figure}[h]
+    \centering
+    \incfigpdf[0.45]{SEHN_prac_1_esq_mult}
+    \caption{Representación multifilar}
+    \label{fig:cuadro_trifasico_multifilar}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%% bibliography %%%%%%%%%%%%%%%%%%%%%%%%
+% \nocite{*}                                 %%%%%%%%%%%%%
+% \printbibliography                         %%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% Last page in case there is no bibliography %%%%%%%%
+% \label{Last Page}                           %%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
