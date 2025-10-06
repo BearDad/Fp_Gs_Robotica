@@ -5,7 +5,8 @@
 \input{~/git/Clase/template/preamble.tex}
 \input{~/git/Clase/template/macros.tex}
 \input{~/git/Clase/template/letterfonts.tex}
-
+\graphicspath{{/home/kuma/git/Clase/Fp_Gs_Robotica/images/}}
+\setimagefolder{/home/kuma/git/Clase/Fp_Gs_Robotica/images/}
 \date{\today}
 % \hbadness=99999
 \usepackage{microtype}
@@ -31,7 +32,7 @@
 %----------------------------------------------------------------------------------------
 %	                            PORTADA
 %----------------------------------------------------------------------------------------
-% \makeportada{}{Daniel Carbajales Soto - 1° CFGSARI}{}
+% \makeportada{}{Daniel Carbajales Soto}{ 1° CFGS Automatización y Robótica Industrial}{}
 
 %----------------------------------------------------------------------------------------
 %                                    HEADER 
@@ -59,24 +60,57 @@
 % Row 3 & & Extra text & Short \\
 % \hline
 % \end{tabularx}
+
+
 %----------------------------------------------------------------------------------------
-% 					DOCUMENT
+%	                            DOCUMENT
 %----------------------------------------------------------------------------------------
-\subsection*{Ejercicio 6}
-Dos corrientes alternas senoidales están desfasadas 20º. Sabiendo que la frecuencia es de 50 Hz. Calcular:
+\section*{Configurar y elaborar un presupuesto para PC}
+\subsection*{Presupuesto \#1: Rendimiento económico por piezas (máximo 600\euro)}
 
+Presupuesto de rendimiento económico. El perfil es para piezas. El usuario dispone de un presupuesto limitado de 600\euro para gastar en componentes para el PC. Debe ser capaz de realizar las tareas cotidianas, utilizar programas de oficina como Word, PowerPoint, etc.
+\begin{enumerate}
+	\item{La carcasa debe ser del tipo ATX, con una fuente de alimentación de 500 W.}
+	\item{El procesador debe ser Intel Core i3, con al menos 4 núcleos, una velocidad de 3 GHz y una memoria caché de 3 MB.}
+	\item{La placa base debe tener integración de la tarjeta gráfica, el audio de la tarjeta de red, y al menos un puerto USB 3.0.}
+	\item{Debe tener 8 GB de RAM del tipo DDR3-1600 o superior.}
+	\item{El ordenador debe tener dos disco duro de al menos 1 TB a 7200 rpm y conexión SATA3.}
+	\item{La carcasa debe tener una grabadora de DVD de 22x o superior, SATA, 80 mm y entrada HDMI.}
+	\item{Necesita tener un monitor de 21", resolución 1920x1080 y entrada HDMI.}
+	\item{Teclado y ratón USB.}
+\end{enumerate}
+\vspace{3em}
 
-a) El período\hspace{5em}  b) El tiempo de desfase.
+\begin{tabularx}{\linewidth}{|C{2cm}|Y|Y|Y|}
+\hline
+\makecell{\cellc Tienda} & \makecell{Precio} & \makecell{Componente} & \makecell{Descripción} \\
+\hline
+LIFE informatica &83.90\euro  &Intel Core i3-13100 & 3.4 $\si{\giga\hertz}$  Quad-Core Processor \\
+\hline
+Coolmod & 69,98\euro & Gigabyte H610M H V3 & DDR4 Micro ATX LGA1700\\
+\hline
+Amazon & 67.98\euro & Corsair Vengeance LPX 16 GB & (2 x 8 GB) DDR4-3200 CL16 Memory\\
+\hline
+Coolmod&64.87\euro & Seagate Barracuda Compute 2 TB  & 3.5" 7200 RPM Internal Hard Drive\\
+\hline
+Coolmod&64.87\euro & Seagate Barracuda Compute 2 TB  & 3.5" 7200 RPM Internal Hard Drive\\
+\hline
+Amazon &  62.96\euro & Zalman S4 & \\
+\hline
+Amazon & 43.90\euro & MSI MAG A550BN & 550 W 80+ Bronze Certified ATX Power Supply\\
+\hline
+Neobyte & 78,90\euro & MSI PRO MP225 & 21.5" 1920 x 1080 100 Hz Monitor\\
+\hline
+Neobyte & 18.80\euro & Logitech K120&  Wired Standard Keyboard \\
+\hline
+Amazon & 11.50\euro  & Lenovo GX30M39704 300 & Wired Laser Mouse\\
+\hline
+\large{$\mathbf{Total}$} &  \multicolumn{3}{X|}{\raggedleft 606.47\euro }  \\  % Your desired row
+ \hline
+\end{tabularx}
+Precios incluyen el envio y descuentas disponibles.
 
-\incfig[0.25]{desfase-tiempo}
-
-\boldit{a)} El período es de: \[t = \frac{1}{50\si{\hertz}} \to  0'02\si{\second}\].
-
-\boldit{b)} El tiempo de desfase es de:
-
-\[t_{\text{desfase}} = \frac{t}{\upvarphi_{360}}\times\upvarphi_{20} \to 
-\frac{\frac{1}{50}}{\ang{360}}\times\ang{20} = 0'0011\si{\second}
-\]
+Precio a 2025-10-06 10:00 CEST+0200
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%% bibliography %%%%%%%%%%%%%%%%%%%%%%%%
