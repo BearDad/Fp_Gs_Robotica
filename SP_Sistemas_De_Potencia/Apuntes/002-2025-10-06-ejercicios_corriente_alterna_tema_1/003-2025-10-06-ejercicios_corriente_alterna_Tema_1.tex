@@ -1,7 +1,6 @@
 \documentclass[spanish,openany]{report}
 % \usepackage{darkmode} \enabledarkmode
 \usepackage{wrapfig}
-\usepackage{enumitem}
 \input{~/git/Clase/template/preamble.tex}
 \input{~/git/Clase/template/macros.tex}
 \input{~/git/Clase/template/letterfonts.tex}
@@ -188,10 +187,38 @@
 		\begin{quote}
   		% ✍️ Write your response here
 			\begin{enumerate}[label=\alph*)]
+
 				\item Triángulo de resistencias.
+
+
+					\begin{minipage}{0.5\textwidth}
+						\[
+							X_L = 2\pi \cdot 50 \cdot 0{,}4 = 125{,}665\Omega
+						\]
+					\end{minipage}%
+					\hfill
+					\begin{minipage}{0.5\textwidth}
+						\[
+							X_c = \frac{1}{2\pi \cdot 50 \cdot (40 \cdot 10^{-6})} = 79{,}775\Omega 
+						\]
+					\end{minipage}
+
+						\[X = X_L - X_c \quad |\quad X = 126,665\Omega - 79,5775\Omega = 46{,}086\Omega \]
+					\begin{minipage}{0.45\textwidth}
+						\vspace{1em}
+						\[Zx = \sqrt{R^2 + X^2} \quad ;\quad Z_x = \sqrt{30^2 + 46,086^2} = 54,99\Omega \] 
+					\end{minipage}
+					\begin{minipage}{0.55\textwidth}
+						\hfill\incfig[0.3]{Triangulo_resistencias}\hfill
+					\end{minipage}
+
+
 				\item Intensidad de corriente.
+
 				\item Triángulo de tensiones.
+
 				\item Triángulo de potencias.
+
 			\end{enumerate}
 
 		\end{quote}
