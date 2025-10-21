@@ -1,7 +1,4 @@
 \documentclass[spanish,openany]{report}
-% \usepackage{darkmode} \enabledarkmode
-\usepackage{wrapfig}
-\usepackage{enumitem}
 \input{~/git/Clase/template/preamble.tex}
 \input{~/git/Clase/template/macros.tex}
 \input{~/git/Clase/template/letterfonts.tex}
@@ -32,16 +29,16 @@
 %----------------------------------------------------------------------------------------
 %	                            PORTADA
 %----------------------------------------------------------------------------------------
-% \makeportada{}{Daniel Carbajales Soto}{ 1° CFGS Automatización y Robótica Industrial}{}
+\makeportada{Configurar y elaborar presupuestos para PC}{Daniel Carbajales Soto}{ 1° CFGS Automatización y Robótica Industrial}{./images/PC.png}
 
-%----------------------------------------------------------------------------------------
-%                                    HEADER 
-%----------------------------------------------------------------------------------------
-% \header{}{Daniel Carbajales Soto}{1° CFGSARI}
 %----------------------------------------------------------------------------------------
 %                               TABLE OF CONTENTS
 %----------------------------------------------------------------------------------------
-% \maketoc
+\maketoc 
+%----------------------------------------------------------------------------------------
+%                                    HEADER 
+%----------------------------------------------------------------------------------------
+\header{Configurar y elaborar presupuestos para PC}{Daniel Carbajales Soto}{1° CFGSARI}
 %----------------------------------------------------------------------------------------
 %	                            TABLES
 %----------------------------------------------------------------------------------------
@@ -67,8 +64,8 @@
 %----------------------------------------------------------------------------------------
 \section*{Configurar y elaborar un presupuesto para PC}
 \subsection*{Presupuesto \#1: Rendimiento económico por piezas (máximo 600\euro)}
-
-Presupuesto de rendimiento económico. El perfil es para piezas. El usuario dispone de un presupuesto limitado de 600\euro para gastar en componentes para el PC. Debe ser capaz de realizar las tareas cotidianas, utilizar programas de oficina como Word, PowerPoint, etc.
+\addcontentsline{toc}{section}{Presupuesto \#1: Rendimiento económico por piezas (máximo 600\euro)}
+Presupuesto de rendimiento económico. El perfil es para piezas. El usuario dispone de un presupuesto limitado de {600\euro}  para gastar en componentes para el PC. Debe ser capaz de realizar las tareas cotidianas, utilizar programas de oficina como Word, PowerPoint, etc.
 \begin{enumerate}
 	\item{La carcasa debe ser del tipo ATX, con una fuente de alimentación de 500 W.}
 	\item{El procesador debe ser Intel Core i3, con al menos 4 núcleos, una velocidad de 3 GHz y una memoria caché de 3 MB.}
@@ -76,14 +73,13 @@ Presupuesto de rendimiento económico. El perfil es para piezas. El usuario disp
 	\item{Debe tener 8 GB de RAM del tipo DDR3-1600 o superior.}
 	\item{El ordenador debe tener dos disco duro de al menos 1 TB a 7200 rpm y conexión SATA3.}
 	\item{La carcasa debe tener una grabadora de DVD de 22x o superior, SATA, 80 mm y entrada HDMI.}
-	\item{Necesita tener un monitor de 21", resolución 1920x1080 y entrada HDMI.}
+	\item{Necesita tener un monitor de 21", resolución 1920x1080px y entrada HDMI.}
 	\item{Teclado y ratón USB.}
 \end{enumerate}
 \vspace{3em}
-
-\begin{tabularx}{\linewidth}{|C{2cm}|Y|Y|Y|}
+\begin{tabularx}{\linewidth}{|C{2.5cm}|Y|Y|Y|}
 \hline
-\makecell{\cellc Tienda} & \makecell{Precio} & \makecell{Componente} & \makecell{Descripción} \\
+\makecell[c]{Tienda} & \makecell{Precio} & \makecell{Componente} & \makecell{Descripción} \\
 \hline
 LIFE informatica &83.90\euro  &Intel Core i3-13100 & 3.4 $\si{\giga\hertz}$  Quad-Core Processor \\
 \hline
@@ -108,9 +104,208 @@ Amazon & 11.50\euro  & Lenovo GX30M39704 300 & Wired Laser Mouse\\
 \large{$\mathbf{Total}$} &  \multicolumn{3}{X|}{\raggedleft 606.47\euro }  \\  % Your desired row
  \hline
 \end{tabularx}
-Precios incluyen el envio y descuentas disponibles.
+Precios incluyen el envió y descuentas disponibles.
 
 Precio a 2025-10-06 10:00 CEST+0200
+\clearpage
+\subsection*{Presupuesto \#2: Rendimiento medio por piezas (máximo 1000\euro)}
+\addcontentsline{toc}{section}{Presupuesto \#2: Rendimiento medio por piezas (máximo 1000\euro)}
+Presupuesto de ordenador de gama media por piezas. El alumno dispone de 1000 euros para gastar en componentes y periféricos. El perfil de usuario es una persona que utiliza el ordenador para conectarse a Internet (ocio y búsqueda de información por motivos de trabajo), utilizar programas de ofimática (Word, Excel, PowerPoint) de forma habitual, ver películas los fines de semana y retocar alguna que otra foto que sale con los ojos rojos.
+\begin{enumerate}
+\item{La carcasa debe ser del tipo ATX, con una fuente de alimentación de 550 W.}
+\item{El procesador debe ser Intel Core i5 o AMD Ryzen 5, con al menos 6 núcleos, una velocidad base de 3.5 GHz y gráficos integrados para tareas multimedia ligeras.}
+\item{La placa base debe tener integración de la tarjeta gráfica, audio integrado, Ethernet Gigabit y al menos dos puertos USB 3.2.}
+\item{Debe tener 16 GB de RAM del tipo DDR5-6000 o superior.}
+\item{El ordenador debe tener un disco SSD de al menos 1 TB con conexión NVMe.}
+\item{La carcasa debe incluir o ser compatible con una unidad óptica slim de DVD±RW.}
+\item{Necesita tener un monitor de 24", resolución 1920x1080px, panel IPS y entrada HDMI.}
+\item{Teclado y ratón inalámbricos USB.}
+\end{enumerate}
+
+
+\begin{tabularx}{\linewidth}{|C{2.5cm}|Y|Y|Y|}
+\hline
+\makecell[c]{Tienda} & \makecell{Precio} & \makecell{Componente} & \makecell{Descripción} \\
+\hline
+PcComponentes & 179,90\euro & AMD Ryzen 5 7600X & Procesador AMD Ryzen 5 7600X a 4.7 GHz sin ventilador, con 6 núcleos y 12 hilos para rendimiento multitarea y multimedia.\\
+\hline
+PcComponentes & 151\euro & MSI B650M GAMING PLUS WIFI & Placa base MSI B650M GAMING PLUS WIFI para AMD AM5 micro ATX, con WiFi integrado, Ethernet Gigabit y puertos USB 3.2. \\
+\hline
+PcComponentes & 126,78\euro & Kingston FURY Beast DDR5 32GB (2x16GB) & Memoria RAM DDR5 a 6000 MHz CL36, 32 GB (2x16 GB) para multitarea fluida y edición ligera. \\
+\hline
+PcComponentes & 124,99\euro & FORGEON ARCANITE ARGB Mesh & Carcasa torre ATX negra con panel mesh ARGB para buena ventilación y estética gaming. \\
+\hline
+PcComponentes & 44,90\euro & NOX HUMMER H-400 & Refrigeración CPU con ventilador de 120 mm negro para mantener temperaturas óptimas en el procesador. \\
+\hline
+PcComponentes & 55,24\euro & Gigabyte P550B 550W & Fuente de alimentación de 550 W 80 Plus Bronze para suministro estable y eficiente de energía. \\
+\hline
+PcComponentes & 84\euro & Samsung 990 EVO Plus 1TB & Disco SSD de 1 TB NVMe PCIe 4.0 a 7150 MB/s para almacenamiento rápido y fiable. \\
+\hline
+\end{tabularx}
+\clearpage
+\begin{tabularx}{\linewidth}{|C{2.5cm}|Y|Y|Y|}
+\hline
+\makecell[c]{Tienda} & \makecell{Precio} & \makecell{Componente} & \makecell{Descripción} \\
+\hline
+PcComponentes & 35,50\euro & Asus SDRW-08D2U Lite & Grabadora DVD slim externa USB blanca para reproducción y grabación de discos ópticos. \\
+\hline
+PcComponentes & 114,99\euro & PC Monitor Gaming 27" & Monitor gaming curvo de 27" VA FHD 180Hz con Adaptive Sync para una experiencia visual fluida. \\
+\hline
+PcComponentes & 24,99\euro & Owlotek MK700 Combo & Combo teclado y ratón low profile dark grey inalámbricos para uso cómodo y ergonómico. \\
+\hline
+\large{$\mathbf{Total}$} &  \multicolumn{3}{X|}{\raggedleft 942,29\euro }  \\  % Your desired row
+ \hline
+\end{tabularx}
+\vspace{3em}
+\subsection*{Presupuesto \#3: Rendimiento alto por piezas (máximo 2000\euro)}
+\addcontentsline{toc}{section}{Presupuesto \#3: Rendimiento alto por piezas (máximo 2000\euro)}
+Presupuesto de ordenador avanzado por piezas. El alumno dispone de hasta 2000 euros para gastar en componentes y periféricos. El perfil de usuario es una persona que necesita el ordenador para todo lo anterior y además es un jugador habitual de juegos de última generación, ve todas las series de TV en versión original y tiene como afición la fotografía y la edición de vídeo.
+
+
+\begin{tabularx}{\linewidth}{|C{2.5cm}|Y|Y|Y|}
+\hline
+\makecell[c]{Tienda} & \makecell{Precio} & \makecell{Componente} & \makecell{Descripción} \\ \hline
+PcComponentes & 298,90\euro & AMD Ryzen 7 9700X & 3.8/5GHz 8-Core Processor \\
+\hline
+PcComponentes & 151\euro & MSI B850M GAMING PLUS WIFI & DDR5 micro ATX AM5 \\
+\hline
+PcComponentes & 126,78\euro & Kingston FURY Beast 32 GB & (2 x 16 GB) DDR5-6000 CL36 Memory \\
+\hline
+PcComponentes & 124,99\euro & FORGEON ARCANITE ARGB Mesh & ATX Mid Tower Case \\
+\hline
+PcComponentes & 44,90\euro & NOX HUMMER H-400 & CPU Air Cooler 120mm \\
+\hline
+PcComponentes & 152,90\euro & MSI MPG A1000G PCIE5 & 1000 W 80+ Gold Fully Modular PSU \\
+\hline
+PcComponentes & 739,95\euro & MSI GeForce RTX 5070 VENT 2 OC & 12 GB GDDR7 Graphics Card \\
+\hline
+PcComponentes & 84\euro & Samsung 990 EVO Plus 1 TB & M.2-2280 PCIe 4.0 NVMe SSD \\
+\hline
+PcComponentes & 114,99\euro & PCCom Monitor Gaming 27" & VA FHD 180Hz Curved Monitor \\
+\hline
+PcComponentes & 99,99\euro & Razer Huntsman Mini & Gaming RGB Switch Red Keyboard \\
+\hline
+PcComponentes & 45,99\euro & Logitech G305 Lightspeed & Wireless Gaming 12000 DPI Mouse \\
+\hline
+\large{$\mathbf{Total}$} &  \multicolumn{3}{X|}{\raggedleft 1984,39\euro }  \\
+\hline
+\end{tabularx}
+
+\clearpage
+\subsection*{Presupuesto \#4: Rendimiento económico ya montado (máximo 600\euro)}
+\addcontentsline{toc}{section}{Presupuesto \#4: Rendimiento económico ya montado (máximo 600\euro)}
+% Presupuesto de ordenador de gama económica (600 €) ya montado, con los periféricos necesarios.
+% Recomendación: PC Racing Pack PC Gaming AMD Ryzen 5 4600G/16GB/1TB+256GB SSD + Pantalla 24" + Teclado + Ratón + Auriculares por 592,19\euro.
+% Especificaciones clave: Procesador AMD Ryzen 5 4600G 4.20GHz, 16 GB DDR4 3200 MHz, SSD 256GB + HDD 1TB, Gráficos integrados Radeon Vega 7, Windows 11 Home. Incluye monitor 24" FHD, teclado retroiluminado, ratón óptico y auriculares estéreo.
+Presupuesto de ordenador de gama económica(600\euro) ya montado, con los periféricos necesarios.
+
+\begin{tabularx}{\linewidth}{|C{2.5cm}|Y|Y|Y|}
+\hline
+Tienda & Precio & Componente & Descripción \\
+\hline
+PcComponentes & 479\euro & PcCom Work AMD Ryzen 7 5700G & Ordenador sobremesa con procesador AMD Ryzen 7 5700G, 32 GB RAM, 1 TB SSD V3, sistema operativo sin SO, ideal para tareas de oficina y multimedia ligera. \\
+\hline
+PcComponentes & 24\euro & Owlotek MK700 Combo & Combo teclado y ratón low profile dark grey inalámbricos, con conectividad 2.4 GHz para uso ergonómico y cómodo. \\
+\hline
+PcComponentes & 89\euro & Asus TUF Gaming VG249Q1R & Monitor 23.8" LED IPS FullHD 165Hz FreeSync Premium, con frecuencia de refresco de 165 Hz para gaming fluido y Adaptive Sync. \\ \hline
+\large{$\mathbf{Total}$} &  \multicolumn{3}{X|}{\raggedleft 592\euro }  \\
+\hline
+\end{tabularx}
+\vspace{3em}
+\subsection*{Presupuesto \#5: Rendimiento medio ya montado (máximo 1000\euro)}
+\addcontentsline{toc}{section}{Presupuesto \#5: Rendimiento medio ya montado (máximo 1000\euro)}
+% Presupuesto de ordenador de gama media (1000 €) ya montado, con los periféricos necesarios.
+% Recomendación: PcCom Ready AMD Ryzen 7 5800X / 32GB / 1TB SSD / RX 7600 XT por aproximadamente 950\euro.
+% Especificaciones clave: Procesador AMD Ryzen 7 5800X (8 núcleos, 3.8 GHz), 32 GB DDR4 3200 MHz, 1 TB SSD PCIe 4.0, GPU AMD Radeon RX 7600 XT 16 GB GDDR6. No incluye periféricos; agregar monitor, teclado y ratón por separado si necesario.
+
+Presupuesto de ordenador de gama  (1000\euro) ya montado, con los periféricos necesarios.
+
+
+\begin{tabularx}{\linewidth}{|C{2.5cm}|Y|Y|Y|}
+\hline
+Tienda & Precio & Componente & Descripción \\
+\hline
+PcComponentes & 819\euro & PcCom Ready AMD Ryzen 7 5700X & Ordenador sobremesa ya montado con procesador AMD Ryzen 7 5700X (8 núcleos a 3.4 GHz base), 32 GB DDR4-3200, 1 TB SSD NVMe PCIe 4.0, NVIDIA GeForce RTX 5060 LE 12 GB GDDR6, placa base B550, fuente 650 W 80+ Bronze,  \\
+\hline
+PcComponentes & 24\euro & Owlotek MK700 Combo & Combo teclado y ratón inalámbricos low profile en color dark grey, conectividad 2.4 GHz con receptor USB, diseño ergonómico y silencioso para uso diario y gaming casual. \\
+\hline
+PcComponentes & 89\euro & Asus TUF Gaming VG249Q1R & Monitor gaming de 23.8" LED IPS Full HD (1920x1080) con 165 Hz de refresco, FreeSync Premium, tiempo de respuesta 1 ms, cobertura sRGB 99\% y puertos HDMI/DisplayPort para una experiencia fluida en juegos y multimedia. \\
+\hline
+\large{$\mathbf{Total}$} &  \multicolumn{3}{X|}{\raggedleft 932\euro }  \\
+\hline
+\end{tabularx}
+\clearpage
+\subsection*{Presupuesto \#6: Rendimiento alto ya montado (máximo 2000\euro)}
+\addcontentsline{toc}{section}{Presupuesto \#6: Rendimiento alto ya montado (máximo 2000\euro)}
+% Presupuesto de ordenador de gama avanzada (2000 €) ya montado, con los periféricos necesarios.
+% Recomendación: PcCom Imperial Intel Core i5-13600KF / 32GB / RTX 4070 por aproximadamente 1800\euro.
+% Especificaciones clave: Procesador Intel Core i5-13600KF (3.5 GHz), 32 GB DDR5, GPU MSI GeForce RTX 4070. Equipo montado y testeado para gaming de alto rendimiento y edición profesional. No incluye periféricos; compatible con accesorios de alta gama.
+
+Presupuesto de ordenador de gama avanzada (2000\euro) ya montado, con los periféricos necesarios.
+
+
+
+\begin{tabularx}{\linewidth}{|C{2.5cm}|Y|Y|Y|}
+
+\hline
+Tienda & Precio & Componente & Descripción \\
+\hline
+PcComponentes & 1729\euro & PcCom Imperial Intel Core i7-14700KF & Ordenador sobremesa ya montado con procesador Intel Core i7-14700KF (20 núcleos a 3.4 GHz base), 32 GB DDR5-6000, 2 TB SSD NVMe PCIe 4.0, NVIDIA GeForce RTX 5070 V2 12 GB GDDR6X, placa base Z790, fuente 850 W 80+ Gold, refrigeración líquida AIO 360 mm y carcasa con iluminación RGB; sin sistema operativo, optimizado para gaming 4K, edición de vídeo profesional y multitarea intensiva. \\
+\hline
+PcComponentes & 24\euro & Owlotek MK700 Combo & Combo teclado y ratón inalámbricos low profile en color dark grey, conectividad 2.4 GHz con receptor USB, diseño ergonómico y silencioso para uso diario y gaming casual. \\
+\hline
+PcComponentes & 89\euro & Asus TUF Gaming VG249Q1R & Monitor gaming de 23.8" LED IPS Full HD (1920x1080) con 165 Hz de refresco, FreeSync Premium, tiempo de respuesta 1 ms, cobertura sRGB 99\% y puertos HDMI/DisplayPort para una experiencia fluida en juegos y multimedia. \\
+\hline
+\large{$\mathbf{Total}$} &  \multicolumn{3}{X|}{\raggedleft 1842\euro }  \\
+\hline
+\end{tabularx}
+\vspace{3em}
+
+\subsection*{Presupuesto \#7: Portátil para usuario 1}
+\addcontentsline{toc}{section}{Presupuesto \#7: Portátil para usuario 1}
+Presupuesto de ordenador portátil para el siguiente perfil de usuario: uso de redes sociales para estar en contacto con familiares de fuera de España. Llevar la contabilidad de casa. Videos esporádicos. Partido de fútbol online todos los domingos.
+
+
+\begin{tabularx}{\linewidth}{|C{2.5cm}|Y|Y|Y|}
+\hline
+Tienda & Precio & Componente & Descripción \\
+\hline
+PcComponentes & 423,98\euro & Portátil Asus Chromebook Plus CX15 & Portátil Chromebook de 15.6" Intel Core N305, 8 GB RAM, 256 GB eMMC, pantalla Full HD táctil, batería 12 horas, sistema Chrome OS, ligero y portable para navegación web y tareas básicas. \\
+\hline
+\large{$\mathbf{Total}$} &  \multicolumn{3}{X|}{\raggedleft 423,98\euro }  \\  % Your desired row
+\hline
+\end{tabularx}
+
+\subsection*{Presupuesto \#8: Portátil para usuario 2}
+\addcontentsline{toc}{section}{Presupuesto \#8: Portátil para usuario 2}
+Presupuesto de ordenador portátil para el siguiente perfil de usuario: quiere sustituir el PC de sobremesa por falta de espacio en el escritorio. Poca movilidad. Aficionado al cine y a la música. Jugador de fin de semana.
+
+
+\begin{tabularx}{\linewidth}{|C{2.5cm}|Y|Y|Y|}
+\hline
+Tienda & Precio & Componente & Descripción \\
+\hline
+PcComponentes & 829\euro & Portátil Lenovo LOQ 15IRX9 & Portátil gaming de 15.6" Intel Core i7-14700HX, 24 GB RAM, 512 GB SSD, RTX 4050, pantalla 144 Hz, teclado RGB, enfriamiento avanzado, optimizado para juegos y edición de vídeo. \\
+\hline
+\large{$\mathbf{Total}$} &  \multicolumn{3}{X|}{\raggedleft 829\euro }  \\  % Your desired row
+\hline
+\end{tabularx}
+
+\vspace{3em}
+\subsection*{Presupuesto \#9: Portátil para usuario 3}
+\addcontentsline{toc}{section}{Presupuesto \#9: Portátil para usuario 3}
+Presupuesto de ordenador portátil para el siguiente perfil de usuario: profesional de la informática (programador de páginas web). Utiliza software específico de diseño gráfico y edición de vídeo. Amante de la fotografía. Usa las redes sociales.
+
+
+\begin{tabularx}{\linewidth}{|C{2.5cm}|Y|Y|Y|}
+\hline
+Tienda & Precio & Componente & Descripción \\
+\hline
+T-LOW & 2437,83\euro & Portátil Dell XPS 14 9440 & Portátil de 14.5" Intel Core Ultra 7 155H, 32 GB RAM, 1 TB SSD, RTX 4050, Windows 11 Pro, pantalla táctil, diseño premium en aluminio, batería hasta 18 horas, ideal para productividad y multimedia ligera. \\
+\hline
+\large{$\mathbf{Total}$} &  \multicolumn{3}{X|}{\raggedleft 2437,83\euro }  \\  % Your desired row
+\hline
+\end{tabularx}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%% bibliography %%%%%%%%%%%%%%%%%%%%%%%%
@@ -122,3 +317,4 @@ Precio a 2025-10-06 10:00 CEST+0200
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{document}
+\usepackage{colortbl}

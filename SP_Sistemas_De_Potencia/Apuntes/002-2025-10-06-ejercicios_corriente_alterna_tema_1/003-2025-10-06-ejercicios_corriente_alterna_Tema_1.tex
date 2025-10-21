@@ -7,6 +7,7 @@
 \graphicspath{{/home/kuma/git/Clase/Fp_Gs_Robotica/images/}}
 \setimagefolder{/home/kuma/git/Clase/Fp_Gs_Robotica/images/}
 
+
 \date{\today}
 % \hbadness=99999
 \usepackage{microtype}
@@ -103,19 +104,28 @@
 				\task El tiempo de desfase
 			\end{tasks}
 
-
-\incfig[0.25]{desfase-tiempo}
-\qs{}{
-	\begin{enumerate}[label=\alph*)]
-		\item El período es de: \[t = \frac{1}{50\si{\hertz}} \to  0'02\si{\second}\]
-		\item El tiempo de desfase es de:
-	
-			\[t_{\text{desfase}} = \frac{t}{\upvarphi_{360}}\times\upvarphi_{20} \to 
-			\frac{\frac{1}{50}}{\ang{360}}\times\ang{20} = 0'0011\si{\second}
+			\begin{paracol}{2}
+				\incfig[0.65]{desfase-tiempo}
+			\switchcolumn
+			\qs{}{ 
+			a) El período es de: 
+			\[
+			\begin{split}
+				t &= \frac{1}{50\si{\hertz}} \\
+				&= \boxed{0'02\si{\second}}
+			\end{split}
 			\]
-	\end{enumerate}
-}
+			}
+			\end{paracol}
+			\qs{}{
+			b) El tiempo de desfase es de:
+			\[\begin{split}
+				t_{\text{desfase}} &= \frac{t}{\ang{360}}\times\ang{20} \\
+				\frac{\frac{1}{50}}{\ang{360}}\times\ang{20} &= 0'0011\si{\second}
+			\end{split}\]
+			}
 		\end{quote}
+
 		
 	\item
 		\begin{quote}
@@ -169,49 +179,94 @@
 
 		\end{quote}
 		
-	\item{}
+	\item\boldit{En el circuito de la figura calcular la indicación de los aparatos de medida.}
 		\begin{quote}
-  		% ✍️ Write your response hereAUTOMATIZACIÓN Y ROBÓTICA INDUSTRIAL
+		% ✍️ Write your response here
+		\begin{paracol}{2}
+		
+			\begin{data}
+			\begin{center}
+				\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}} c c}
+
+					\hline
+					\textbf{Magnitud} & \textbf{Valor}  \\ \hline\hline
+					$U$ & $230$  \si{\volt}  \\ \hline
+					$R$ & $80$  \si{\ohm}  \\ \hline
+					$L$ & $0,01$  \si{\henry}  \\ \hline
+					$C$ & $100$  \si{\micro\farad}  \\ \hline
+					$f$ & $50$  \si{\hertz}  \\ \hline
+				\end{tabular*}
+			\end{center}
+			\end{data}
+			\switchcolumn
+			\begin{solution}[Amperaje]
+			\[
+				\begin{split}
+				I &= \frac{U}{R} \\
+				I &= \frac{230}{80} \\
+				I &= \boxed{2.7 \si{\ampere}} \\
+				\end{split}
+			\]
+			\end{solution}
+		\end{paracol}
+
+			\begin{solution}[$U_{ab}$]
+				\begin{align*}
+				\[U = I Z \] 
+				\[U = 2.7\cdot\sqrt{80^2 + (\frac{1}{2\pi\cdot 50 \cdot (100\cdot 10^{-6})})^2}\]
+				\[U = \boxed{1.8 \si{\volt}} \]
+				\end{align*}
+			\end{solution}
+			\begin{solution}[$U_{bc}$]
+			\end{solution}
+
+
 		\end{quote}
 		
-	\item
+	\clearpage
+	\item\boldit{En el circuito de la figura calcular la indicación de los aparatos de medida.}
 		\begin{quote}
-  		% ✍️ Write your response here
+		% ✍️ Write your response here
 		\end{quote}
-		
 	\item\boldit{Una bobina de resistencia 30$\Omega$  y coeficiente de autoinducción 0,4 H está conectada en serie con un condensador de 40 F a una tensión alterna senoidal de 220 V, 50 Hz.}
 
 
 
 	\boldit{Calcular:}
 		\begin{quote}
-  		% ✍️ Write your response here
+		% ✍️ Write your response here
 			\begin{enumerate}[label=\alph*)]
 
 				\item Triángulo de resistencias.
 
 
-					\begin{minipage}{0.5\textwidth}
+					\begin{paracol}{2}
 						\[
-							X_L = 2\pi \cdot 50 \cdot 0{,}4 = 125{,}665\Omega
+							\begin{split}
+								X_L &= 2\pi f 0,4(L) \\ 
+								    &= 125,665\Omega
+							\end{split}
 						\]
-					\end{minipage}%
-					\hfill
-					\begin{minipage}{0.5\textwidth}
+						\switchcolumn
 						\[
-							X_c = \frac{1}{2\pi \cdot 50 \cdot (40 \cdot 10^{-6})} = 79{,}775\Omega 
+							\begin{split}
+							X_c &= \frac{1}{2\pi \cdot 50 \cdot (40 \cdot 10^{-6})} \\
+							    &= 79{,}775\Omega 
+							\end{split}
 						\]
-					\end{minipage}
-
-						\[X = X_L - X_c \quad |\quad X = 126,665\Omega - 79,5775\Omega = 46{,}086\Omega \]
-					\begin{minipage}{0.45\textwidth}
+						\switchcolumn
+						\[
+						\begin{split}
+						X &= X_L - X_C \\
+						  &= 125{,}664 \, \Omega - 79{,}577 \, \Omega \\
+						  &= 46{,}087 \, \Omega
+						\end{split}
+						\]
 						\vspace{1em}
 						\[Zx = \sqrt{R^2 + X^2} \quad ;\quad Z_x = \sqrt{30^2 + 46,086^2} = 54,99\Omega \] 
-					\end{minipage}
-					\begin{minipage}{0.55\textwidth}
-						\hfill\incfig[0.3]{Triangulo_resistencias}\hfill
-					\end{minipage}
-
+						\switchcolumn
+						\hfill\incfig[0.45]{Triangulo_resistencias}\hfill
+					\end{paracol}
 
 				\item Intensidad de corriente.
 
