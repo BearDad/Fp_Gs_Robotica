@@ -1,60 +1,43 @@
-\documentclass[spanish,openany]{report}
-% \usepackage{darkmode} \enabledarkmode
-\usepackage{wrapfig}
-\input{~/git/Clase/template/preamble.tex}
-\input{~/git/Clase/template/macros.tex}
-\input{~/git/Clase/template/letterfonts.tex}
-\graphicspath{{/home/kuma/git/Clase/Fp_Gs_Robotica/images/}}
-\setimagefolder{/home/kuma/git/Clase/Fp_Gs_Robotica/images/}
 
-\date{\today}
-% \hbadness=99999
-\usepackage{microtype}
-% \addbibresource{./bibliografia.bib}
-\usepackage{titling}
-\usepackage{afterpage}
-
-
-% Header and footer
-% \fancypagestyle{plain}{
-%     \fancyhf{} %Clear Everything.
-%     \fancyfoot[C]{Página \thepage\ de \pageref{LastPage} }%Page Number
-%     \renewcommand{\headrulewidth}{1pt} %0pt for no rule, 2pt thicker etc...
-%     \renewcommand{\footrulewidth}{1pt}
-%     \fancyfoot[R]{\small{Daniel Carbajales Soto}}
-%     \fancyhead[R]{\small{Cinta Transportadora con 3 Velocidades}}
-%     \fancyhead[L]{\small{\today}}
-% }
-% \pagestyle{plain}
-
-\begin{document}
 
 %----------------------------------------------------------------------------------------
 %	                            PORTADA
 %----------------------------------------------------------------------------------------
-\makeportada{Digitalización}{Daniel Carbajales Soto}{1° CFGS Automatización y Robótica Industrial}{../../images/digitalizacion.png}
+% \makeportada{}{Daniel Carbajales Soto}{ 1° CFGS Automatización y Robótica Industrial}{}
 
 %----------------------------------------------------------------------------------------
 %                                    HEADER 
 %----------------------------------------------------------------------------------------
-\header{Digitalización}{Daniel Carbajales Soto}{1° CFGS Automatización y Robotica Industrial}
+% \header{}{Daniel Carbajales Soto}{1° CFGSARI}
 %----------------------------------------------------------------------------------------
 %                               TABLE OF CONTENTS
 %----------------------------------------------------------------------------------------
-\maketoc
+% \maketoc
 %----------------------------------------------------------------------------------------
 %	                            TABLES
 %----------------------------------------------------------------------------------------
 % this is just a demo in case i need to make a table
 %
+%
+%
+% \begin{tabularx}{\linewidth}{|C{2cm}|Y|Y|C{2cm}|}
+% \hline
+% \makecell{Header 1} & \makecell{Header 2 \\ with linebreak} & \makecell{Header 3} & \makecell{Header 4} \\
+% \hline
+% Row 1 & This is a long cell text that automatically wraps in the Y column & Another long cell & Short \\
+% \hline
+% Row 2 & \multirow{2}{*}{Multirow text} & More text & Short \\
+% \cline{1-1} \cline{3-4}
+% Row 3 & & Extra text & Short \\
+% \hline
+% \end{tabularx}
+
 
 %----------------------------------------------------------------------------------------
 %	                            DOCUMENT
 %----------------------------------------------------------------------------------------
-\fchapter{1}{Ejercicios Tema 1}
-\section{Pág. 11}
-\subsection{\textcolor{blue}{TU SECTOR PROFESIONAL.} Tarea. Expresión oral.}
-Accede a la página web de \href{https://bit.ly/491sErk}{correos market} y consulta el listado de los vendedores que están dados de alta en la plataforma. Realiza una selección de diez de ellos que ofrezcan algún producto relacionado con tu sector y consulta la lista de productos y la ficha del vendedor. Después plasma en una tabla, para cada uno de ellos, la siguiente información: nombre de la empresa, localización, año de fundación (si figura), personas en el equipo, tipo de productos. Tras analizar los datos recogidos, expón al resto de la clase cuáles son las conclu- siones acerca de la importancia de digitalizar la venta online a través de una página como la de Correos.
+\fchapter{1}{Ej 2 Pág. 11.}
+\fsection{\boldit{\textcolor{waveBlue2}{TU SECTOR PROFESIONAL.} Tarea. Expresión oral.}}Accede a la página web de \href{https://bit.ly/491sErk}{correos market} y consulta el listado de los vendedores que están dados de alta en la plataforma. Realiza una selección de diez de ellos que ofrezcan algún producto relacionado con tu sector y consulta la lista de productos y la ficha del vendedor. Después plasma en una tabla, para cada uno de ellos, la siguiente información: nombre de la empresa, localización, año de fundación (si figura), personas en el equipo, tipo de productos. Tras analizar los datos recogidos, expón al resto de la clase cuáles son las conclu- siones acerca de la importancia de digitalizar la venta online a través de una página como la de Correos.
 \vspace{2em}
 
 \begin{tabularx}{\linewidth}{|C{3cm}|Y|Y|Y|Y|}
@@ -82,12 +65,7 @@ Accede a la página web de \href{https://bit.ly/491sErk}{correos market} y consu
 	Cablewindow & Laguna del marquesado 12, nave 11, Madrid  & 2001 & 5 & Electrónica \\
 \hline
 \end{tabularx}
-\clearpage
 
-\section{Pág. 27}
-\subsection{\textcolor{blue}{INVESTIGACIÓN Y EXPRESIÓN ORAL.}}\begin{Large}
- Realizad una investigación en grupo sobre las diferencias entre digitalización y transformación digital, utilizando ejemplos específicos para demostrar cómo se aplican en los siguientes sectores industriales: tecnología e informática, salud y farmacéutica, finanzas y banca, energía y recursos naturales, manufactura y producción industrial, comercio electrónico, telecomunicaciones, construcción, educación y formación, transporte y logística.
-\end{Large}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%% bibliography %%%%%%%%%%%%%%%%%%%%%%%%
 % \nocite{*}                                 %%%%%%%%%%%%%
@@ -97,4 +75,3 @@ Accede a la página web de \href{https://bit.ly/491sErk}{correos market} y consu
 % \label{Last Page}                           %%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\end{document}

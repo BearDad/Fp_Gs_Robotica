@@ -1,37 +1,7 @@
-\documentclass[spanish,openany]{report}
-% \usepackage{darkmode} \enabledarkmode
-\usepackage{wrapfig}
-\usepackage{enumitem}
-\input{~/git/Clase/template/preamble.tex}
-\input{~/git/Clase/template/macros.tex}
-\input{~/git/Clase/template/letterfonts.tex}
-
-\date{\today}
-% \hbadness=99999
-\usepackage{microtype}
-% \addbibresource{./bibliografia.bib}
-\usepackage{titling}
-\usepackage{afterpage}
-
-
-% Header and footer
-% \fancypagestyle{plain}{
-%     \fancyhf{} %Clear Everything.
-%     \fancyfoot[C]{Página \thepage\ de \pageref{LastPage} }%Page Number
-%     \renewcommand{\headrulewidth}{1pt} %0pt for no rule, 2pt thicker etc...
-%     \renewcommand{\footrulewidth}{1pt}
-%     \fancyfoot[R]{\small{Daniel Carbajales Soto}}
-%     \fancyhead[R]{\small{Cinta Transportadora con 3 Velocidades}}
-%     \fancyhead[L]{\small{\today}}
-% }
-% \pagestyle{plain}
-
-\begin{document}
-
 %----------------------------------------------------------------------------------------
 %	                            PORTADA
 %----------------------------------------------------------------------------------------
-% \makeportada{sostenibilidad}{Daniel Carbajales Soto}{ 1° CFGS Automatización y Robótica Industrial}{}
+% \makeportada{}{Daniel Carbajales Soto}{ 1° CFGS Automatización y Robótica Industrial}{}
 
 %----------------------------------------------------------------------------------------
 %                                    HEADER 
@@ -64,6 +34,25 @@
 %----------------------------------------------------------------------------------------
 %	                            DOCUMENT
 %----------------------------------------------------------------------------------------
+\fchapter{3}{Pág. 23}
+\fsection{\boldit{\textcolor{waveBlue2}{Actividades:} Ponte a prueba}}
+\addcontentsline{toc}{section}{\textcolor{waveBlue2}{Ejercicio 7}}
+\section*{\textcolor{waveBlue2}{7. }Encuentra los tres errores que aparecen en cada uno de los siguientes textos y redáctalos de manera correcta.}
+
+\subsection*{\boldit{\textcolor{waveBlue1}{Texto 1:}}}
+La transformación digital y la  digitalización son conceptos distintos pero relacionados. Mientras que la  \textcolor{samuraiRed}{transformación digital} $\to$ ``digitalización'' se 
+enfoca en convertir procesos y datos a formatos digitales para modernizar operaciones, la \textcolor{samuraiRed}{digitalización} $\to$ ``transformación digital'' implica un cambio profundo en el uso de
+tecnología para mejorar el rendimiento y lograr objetivos estratégicos, impactando modelos de negocio, cultura organizacional y procesos. 
+Esta transformación puede manifestarse en la reingeniería de técnicas empresariales, la evolución del modelo de negocio, 
+la adaptación al dominio empresarial y el cambio cultural organizacional, \textcolor{samuraiRed}{del mismo modo a todas las empresas} $\to$ ``adaptándose personalizadamente a cada una de las empresas.''
+
+\subsection*{\boldit{\textcolor{waveBlue1}{Texto 2:}}}
+La transformación \textcolor{samuraiRed}{digital parcial} $\to$ ``digital '' de una empresa abarca la aplicación de tecnologías digitales en todos los aspectos del negocio, 
+desde la producción hasta las operaciones empresariales y la \textcolor{samuraiRed}{cadena alimentaria} $\to$ ``cadena de suministro''. Esta \textcolor{samuraiRed}{digitalización} $\to$``transformación'' 
+mejora la eficiencia operativa mediante la documentación de procesos y la monitorización en tiempo real, con tecnologías como IoT y sistemas de control avanzado. 
+El proceso de transformación digital tiene asociado un desafío en su implantación llamado resistencia al cambio, que se supera 
+aplicando una comunicación efectiva, educando y haciendo partícipe a todo el personal.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%% bibliography %%%%%%%%%%%%%%%%%%%%%%%%
 % \nocite{*}                                 %%%%%%%%%%%%%
@@ -73,4 +62,3 @@
 % \label{Last Page}                           %%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\end{document}
