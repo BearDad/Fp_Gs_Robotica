@@ -1,3 +1,21 @@
+\documentclass[spanish,openany]{report}
+\usepackage{wrapfig}
+\input{/home/kuma/git/Clase/template/preamble.tex}
+\input{/home/kuma/git/Clase/template/macros.tex}
+\input{/home/kuma/git/Clase/template/letterfonts.tex}
+\graphicspath{{/home/kuma/git/Clase/Fp_Gs_Robotica/images/}}
+\setimagefolder{/home/kuma/git/Clase/Fp_Gs_Robotica/images/}
+
+\date{\today}
+% \hbadness=99999
+\usepackage{microtype}
+% \addbibresource{./bibliografia.bib}
+\usepackage{titling}
+\usepackage{afterpage}
+
+
+
+\begin{document}
 
 %----------------------------------------------------------------------------------------
 %	                            PORTADA
@@ -5,13 +23,13 @@
 % \makeportada{}{Daniel Carbajales Soto}{ 1° CFGS Automatización y Robótica Industrial}{}
 
 %----------------------------------------------------------------------------------------
-%                                    HEADER 
-%----------------------------------------------------------------------------------------
-% \header{}{Daniel Carbajales Soto}{1° CFGSARI}
-%----------------------------------------------------------------------------------------
 %                               TABLE OF CONTENTS
 %----------------------------------------------------------------------------------------
 % \maketoc
+%----------------------------------------------------------------------------------------
+%                                    HEADER 
+%----------------------------------------------------------------------------------------
+% \header{}{Daniel Carbajales Soto}{1° CFGSARI}
 %----------------------------------------------------------------------------------------
 %	                            TABLES
 %----------------------------------------------------------------------------------------
@@ -35,7 +53,44 @@
 %----------------------------------------------------------------------------------------
 %	                            DOCUMENT
 %----------------------------------------------------------------------------------------
-\clearpage
+\begin{tabularx}{\linewidth}{|C|C|C|}
+	positive & negative & it depends \\
+	\hline
+	organised & lazy &  slow\\
+	\hline
+	skilled & scruffy & experienced\\
+	\hline
+	helpful & & ambitious\\
+	\hline
+	hard-working & &\\
+	\hline
+	reliable & &\\
+	\hline
+	 & &\\
+	\hline
+	responsible & &\\
+	\hline
+	tidy & &\\
+	\hline
+	 & &\\
+	\hline
+	 & &\\
+	\hline
+	 & &\\
+	\hline
+	 & &\\
+	\hline
+	 & &\\
+	\hline
+	 & &\\
+	\hline
+	 & &\\
+\end{tabularx}
+
+
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%% bibliography %%%%%%%%%%%%%%%%%%%%%%%%
 % \nocite{*}                                 %%%%%%%%%%%%%
@@ -45,3 +100,4 @@
 % \label{Last Page}                           %%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\end{document}

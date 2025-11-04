@@ -1,17 +1,35 @@
+\documentclass[spanish,openany]{report}
+\usepackage{wrapfig}
+\input{/home/kuma/git/Clase/template/preamble.tex}
+\input{/home/kuma/git/Clase/template/macros.tex}
+\input{/home/kuma/git/Clase/template/letterfonts.tex}
+\graphicspath{{/home/kuma/git/Clase/Fp_Gs_Robotica/images/}}
+\setimagefolder{/home/kuma/git/Clase/Fp_Gs_Robotica/images/}
+
+\date{\today}
+% \hbadness=99999
+\usepackage{microtype}
+% \addbibresource{./bibliografia.bib}
+\usepackage{titling}
+\usepackage{afterpage}
+
+
+
+\begin{document}
 
 %----------------------------------------------------------------------------------------
 %	                            PORTADA
 %----------------------------------------------------------------------------------------
-% \makeportada{}{Daniel Carbajales Soto}{ 1° CFGS Automatización y Robótica Industrial}{}
+\makeportada{TEMA 1 \\ \vspace{1em} La sostenibilidad en las organizaciones\\ empresariales}{Daniel Carbajales Soto}{ \vspace{-2em}1° CFGS Automatización y Robótica Industrial}{sostenibilidad.jpg}
 
-%----------------------------------------------------------------------------------------
-%                                    HEADER 
-%----------------------------------------------------------------------------------------
-% \header{}{Daniel Carbajales Soto}{1° CFGSARI}
 %----------------------------------------------------------------------------------------
 %                               TABLE OF CONTENTS
 %----------------------------------------------------------------------------------------
-% \maketoc
+\maketoc
+%----------------------------------------------------------------------------------------
+%                                    HEADER 
+%----------------------------------------------------------------------------------------
+\header{Sostenibilidad}{Daniel Carbajales Soto}{1° CFGSARI}
 %----------------------------------------------------------------------------------------
 %	                            TABLES
 %----------------------------------------------------------------------------------------
@@ -35,14 +53,23 @@
 %----------------------------------------------------------------------------------------
 %	                            DOCUMENT
 %----------------------------------------------------------------------------------------
-1
-\chapter{Ejercicios Tema 1}
+
+
+\input{chapters/001-2025-11-04-ejercicio-1/001-2025-11-04-ejercicio-1.tex}
+\input{chapters/002-2025-11-04-ejercicio-5/002-2025-11-04-ejercicio-5.tex}
+\input{chapters/003-2025-11-04-ejercicio-7/003-2025-11-04-ejercicio-7.tex}
+\input{chapters/004-2025-11-04-ejercicio-10/004-2025-11-04-ejercicio-10.tex}
+\input{chapters/005-2025-11-04-ejercicio-13/005-2025-11-04-ejercicio-13.tex}
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%% bibliography %%%%%%%%%%%%%%%%%%%%%%%%
 % \nocite{*}                                 %%%%%%%%%%%%%
-% \printbibliography                         %%%%%%%%%%%%%
+% \print bibliography                         %%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% Last page in case there is no bibliography %%%%%%%%
 % \label{Last Page}                           %%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\end{document}
