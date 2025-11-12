@@ -1,0 +1,136 @@
+\documentclass[spanish,openany]{report}
+\usepackage{wrapfig}
+\input{/home/kuma/git/Clase/template/preamble.tex}
+\input{/home/kuma/git/Clase/template/macros.tex}
+\input{/home/kuma/git/Clase/template/letterfonts.tex}
+\graphicspath{{/home/kuma/git/Clase/Fp_Gs_Robotica/images/}}
+\setimagefolder{/home/kuma/git/Clase/Fp_Gs_Robotica/images/}
+
+\date{\today}
+% \hbadness=99999
+\usepackage{microtype}
+% \addbibresource{./bibliografia.bib}
+\usepackage{titling}
+\usepackage{afterpage}
+
+
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	                            PORTADA
+%----------------------------------------------------------------------------------------
+% \makeportada{}{Daniel Carbajales Soto}{ 1° CFGS Automatización y Robótica Industrial}{}
+
+%----------------------------------------------------------------------------------------
+%                               TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+% \maketoc
+%----------------------------------------------------------------------------------------
+%                                    HEADER 
+%----------------------------------------------------------------------------------------
+% \header{}{Daniel Carbajales Soto}{1° CFGSARI}
+%----------------------------------------------------------------------------------------
+%	                            TABLES
+%----------------------------------------------------------------------------------------
+% this is just a demo in case i need to make a table
+%
+%
+%
+% \begin{tabularx}{\linewidth}{|C{2cm}|Y|Y|C{2cm}|}
+% \hline
+% \makecell{Header 1} & \makecell{Header 2 \\ with linebreak} & \makecell{Header 3} & \makecell{Header 4} \\
+% \hline
+% Row 1 & This is a long cell text that automatically wraps in the Y column & Another long cell & Short \\
+% \hline
+% Row 2 & \multirow{2}{*}{Multirow text} & More text & Short \\
+% \cline{1-1} \cline{3-4}
+% Row 3 & & Extra text & Short \\
+% \hline
+% \end{tabularx}
+
+
+%----------------------------------------------------------------------------------------
+%	                            DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{center}
+	\Huge{Ejercicio propuesto pt100}
+\end{center}
+\vspace{1cm}
+
+\begin{paracol}{2}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{./scripts/pt100_plot_kanagawa.pdf}
+	\caption*{Curva de características PT100 sin acondicionar}
+	\label{fig:fig1}
+\end{figure}
+\switchcolumn
+\begin{center}
+		
+\begin{tabular}{|c|c|}
+\hline
+\rowcolor{waveBlue1}
+\textcolor{fujiWhite1}{Temperatura (°C) }& \textcolor{fujiWhite1}{Resistencia (\(\Omega\)) }\\
+\hline
+\rowcolor{waveAqua1}
+-100 & 60.26 \\
+\hline
+\rowcolor{waveAqua1}
+0 & 100.00 \\
+\hline
+\rowcolor{waveAqua1}
+100 & 138.51 \\
+\hline
+\rowcolor{waveAqua1}
+200 & 175.86 \\
+\hline
+\rowcolor{waveAqua1}
+300 & 212.05 \\
+\hline
+\rowcolor{waveAqua1}
+400 & 247.09 \\
+\hline
+\rowcolor{waveAqua1}
+500 & 280.98 \\
+\hline
+\rowcolor{waveAqua1}
+600 & 313.71 \\
+\hline
+\rowcolor{waveAqua1}
+700 & 345.28 \\
+\hline
+\rowcolor{waveAqua1}
+800 & 375.70 \\
+\hline
+\end{tabular}
+
+
+\vspace{0.75cm}
+Valores de la PT100
+\end{center}
+\end{paracol}
+\begin{itemize}
+	\item rango:\\
+	$-100\si{\degreeCelsius} \text{ -- } 800 \si{\degreeCelsius}$ 
+	\item alcance:\\
+		\(900\si{\degreeCelsius}\)
+	\item sensibilidad:\\
+		\(0,34375 \si{\ohm\per\degreeCelsius}\)
+	
+\end{itemize}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%% bibliography %%%%%%%%%%%%%%%%%%%%%%%%
+% \nocite{*}                                 %%%%%%%%%%%%%
+% \printbibliography                         %%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% Last page in case there is no bibliography %%%%%%%%
+% \label{Last Page}                           %%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
