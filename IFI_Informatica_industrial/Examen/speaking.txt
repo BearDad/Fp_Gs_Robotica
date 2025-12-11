@@ -1,0 +1,32 @@
+-	Hello i'm Mr. <apellido> and I will be your interviewer today. I'll ask you some questions about your previous work experience 
+and your skills. But first, I'll ask you to introduce yourself.
+
+-	So, my name is <nombre> and I'm an <profesion> from <ciudad>, I'm <edad> years old and I live in <ciudad>.
+pleasure to meet you Mr. <apellido>.
+
+-	A pleasure to meet you too, Mr.<apellido>. Tell me why would you like to work with us.
+
+-	I would like to work with you because I'm chasing becoming a <senior-profesion> and i want to learn as much as possible, plus
+I've heard fantastic things about your company. 
+
+-	Well tell me more about your work experience. The kinds of projects you've worked on and what tasks where you responsible for.
+
+-	I've worked on a lot of projects, but some of them are the rebuilding of a historical building in <ciudad>, and the set up of the electrical system in several new construction buildings.
+where I was responsible for the wiring and installation of the electrical system.
+
+- 	And what about your skills? 
+
+-	I'm skilled in <skill1>, <skill2>, <skill3> and <skill4>.
+
+-	And what about your education? 
+
+-	I have a <fp-media> from <instituto>, and I'm currently coursing a higher level vocational training in <fp-superior>.
+
+-	Well, I'm glad to hear that you're interested in working with us. When would you be able to start?
+
+-	I would like to start inmediately, but I'm open to any time that suits you.
+
+-	Alright pleasure meeting you, Mr. <apellido> I'll be calling you back soon. bye.
+
+-	Goodbye, Mr. <apellido>.
+
