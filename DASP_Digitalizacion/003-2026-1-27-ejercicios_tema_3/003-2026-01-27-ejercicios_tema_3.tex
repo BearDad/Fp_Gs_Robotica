@@ -1,0 +1,71 @@
+\documentclass[spanish,openany]{report}
+% \usepackage{darkmode} \enabledarkmode
+\usepackage{wrapfig}
+\input{~/git/Clase/template/preamble.tex}
+\input{~/git/Clase/template/macros.tex}
+\input{~/git/Clase/template/letterfonts.tex}
+\graphicspath{{/home/kuma/git/Clase/Fp_Gs_Robotica/images/}}
+\setimagefolder{/home/kuma/git/Clase/Fp_Gs_Robotica/images/}
+
+\date{\today}
+% \hbadness=99999
+\usepackage{microtype}
+% \addbibresource{./bibliografia.bib}
+\usepackage{titling}
+\usepackage{afterpage}
+
+
+% Header and footer
+% \fancypagestyle{plain}{
+%     \fancyhf{} %Clear Everything.
+%     \fancyfoot[C]{Página \thepage\ de \pageref{LastPage} }%Page Number
+%     \renewcommand{\headrulewidth}{1pt} %0pt for no rule, 2pt thicker etc...
+%     \renewcommand{\footrulewidth}{1pt}
+%     \fancyfoot[R]{\small{Daniel Carbajales Soto}}
+%     \fancyhead[R]{\small{Cinta Transportadora con 3 Velocidades}}
+%     \fancyhead[L]{\small{\today}}
+% }
+% \pagestyle{plain}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	                            PORTADA
+%----------------------------------------------------------------------------------------
+% \makeportada{Caracterización de Tecnologías habilitadoras}{Daniel Carbajales Soto}{1° CFGS Automatización y Robótica Industrial}{../../images/digitalizacion.png}
+
+%----------------------------------------------------------------------------------------
+%                               TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+% \maketoc
+%----------------------------------------------------------------------------------------
+%                                    HEADER 
+%----------------------------------------------------------------------------------------
+% \phantomsection
+% \header{Digitalización}{Daniel Carbajales Soto}{1° CFGS Automatización y Robotica Industrial}
+% \setcounter{page}{1}
+%----------------------------------------------------------------------------------------
+%	                            TABLES
+%----------------------------------------------------------------------------------------
+% this is just a demo in case i need to make a table
+%
+
+%----------------------------------------------------------------------------------------
+%	                            DOCUMENT
+%----------------------------------------------------------------------------------------
+\input{./chapters/001-2026-01-27-pag64ej1/001-2026-01-27-pag64ej1.tex}
+% \input{./chapter/002-2026-01-27-pag65ej2}
+% \input{./chapter/003-2026-01-27-pag69ej3}
+% \input{./chapter/004-2026-01-27-pag74ej4}
+% \input{./chapter/005-2026-01-27-pag75ej5}
+% \input{./chapter/006-2026-01-27-pag79ej3}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%% bibliography %%%%%%%%%%%%%%%%%%%%%%%%
+% \nocite{*}                                 %%%%%%%%%%%%%
+% \printbibliography                         %%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% Last page in case there is no bibliography %%%%%%%%
+% \label{Last Page}                           %%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
