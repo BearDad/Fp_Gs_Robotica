@@ -1,0 +1,122 @@
+\fsection{Ej 2 Pág 136}
+\fsubsection
+[\textcolor{waveBlue2}{Tarea: Brecha de Seguridad}]
+{\textcolor{waveBlue2}{\boldit{Tarea: Brecha de Seguridad}}}
+{
+	Elige un tipo de empresa relacionada con el sector profesional de tu ciclo formativo. Realiza
+	un listado de los datos que gestiona, imagina una brecha de seguridad y define el procedimiento
+	que debe llevarse a cabo con las personas afectadas y con la Agencia Española de Protección
+	de Datos (AEPD), indicando: la categoría de los datos filtrados, la categoría y vulnerabilidad
+	de las personas afectadas, el volumen de datos afectados y el procedimiento con la AEPD y los
+	interesados.
+}
+
+\begin{solution}
+
+	\textbf{Empresa:} \textit{AutoSistemas Industriales S.L.}
+
+	\medskip
+	\hrule
+	\medskip
+
+	\textbf{1. Tipos de datos que gestiona la empresa}
+
+	\begin{itemize}
+		\item Datos de empleados: nombre, DNI, número SS, salario, cuenta bancaria, partes de baja.
+		\item Datos de clientes: nombre/razón social, NIF/CIF, dirección, teléfono, correo, IBAN.
+		\item Datos de proveedores: nombre de contacto, teléfono, correo corporativo, IBAN.
+		\item Datos de procesos internos: registros de intervenciones técnicas, accesos a
+		      instalaciones de clientes.
+		\item Listados de compras y ventas, presupuestos, facturas.
+	\end{itemize}
+
+	\medskip
+
+	\textbf{2. Descripción de la brecha de seguridad (supuesto)}
+
+	Un empleado del departamento administrativo recibe un correo de \textit{phishing} que simula ser
+	una actualización del software de gestión. Al hacer clic en el enlace e introducir sus
+	credenciales, un atacante externo accede al sistema durante 48 horas sin ser detectado.
+	Durante ese tiempo, descarga la base de datos de clientes y el fichero de nóminas de empleados.
+	El acceso es descubierto al detectarse un inicio de sesión desde una IP extranjera.
+
+	Tipo de brecha: \textbf{brecha de confidencialidad} (acceso no autorizado a datos personales).
+
+	\medskip
+
+	\textbf{3. Categorías de datos afectados}
+
+	\begin{itemize}
+		\item Datos identificativos y económicos de \textbf{85 clientes} (nombre, NIF, IBAN,
+		      dirección, correo).
+		\item Datos laborales y económicos de \textbf{12 empleados} (DNI, número de afiliación SS,
+		      salario, cuenta bancaria). Los datos de salud (partes de baja) no estaban en el fichero
+		      comprometido.
+	\end{itemize}
+
+	\medskip
+
+\end{solution}
+\clearpage
+\begin{solution}
+	\textbf{4. Categoría de personas afectadas y su vulnerabilidad}
+
+	\begin{itemize}
+		\item \textbf{Clientes:} riesgo de usurpación de identidad, fraude bancario (datos IBAN
+		      expuestos) y ataques de ingeniería social (suplantación de la empresa).
+		\item \textbf{Empleados:} riesgo elevado por exposición de datos bancarios y número de
+		      Seguridad Social, susceptibles de ser usados para fraude o suplantación laboral.
+		      No se trata de colectivos especialmente vulnerables (menores, personas con discapacidad),
+		      pero la naturaleza de los datos los sitúa en \textbf{riesgo alto}.
+	\end{itemize}
+
+	\medskip
+
+	\textbf{5. Volumen de datos afectados}
+
+	\begin{itemize}
+		\item 97 personas físicas afectadas en total (85 clientes + 12 empleados).
+		\item Estimación de registros: aprox. 970 campos de datos personales comprometidos.
+	\end{itemize}
+
+	\medskip
+
+	\textbf{6. Procedimiento a seguir}
+
+	\textbf{a) Medidas inmediatas de contención:}
+	\begin{enumerate}[label=\arabic*.]
+		\item Revocar inmediatamente las credenciales comprometidas y forzar cambio de contraseñas.
+		\item Aislar los sistemas afectados y preservar los registros (logs) como evidencia.
+		\item Documentar el incidente: hora de detección, sistemas afectados, acciones tomadas.
+	\end{enumerate}
+
+	\textbf{b) Notificación a la AEPD (art. 33 RGPD) -- plazo máximo: 72 horas:}
+	\begin{enumerate}[label=\arabic*.]
+		\item Acceder a la sede electrónica de la AEPD y cumplimentar el formulario de notificación
+		      de brechas de datos personales.
+		\item Indicar: naturaleza de la brecha, categorías y número de interesados afectados,
+		      categorías de datos comprometidos, consecuencias probables, medidas adoptadas.
+		\item La notificación puede realizarse de forma provisional si aún no se dispone de todos
+		      los datos, completándola posteriormente.
+	\end{enumerate}
+
+	\textbf{c) Comunicación a los afectados (art. 34 RGPD) -- sin dilación indebida:}
+
+	Dado que existe \textbf{alto riesgo} para los derechos y libertades (datos bancarios expuestos),
+	es \textbf{obligatorio} comunicar la brecha a cada persona afectada. La comunicación debe incluir:
+	\begin{itemize}
+		\item Descripción clara de qué ha ocurrido y en qué período.
+		\item Datos e información personal que se ha visto comprometida.
+		\item Consecuencias posibles (fraude, suplantación de identidad).
+		\item Medidas adoptadas por la empresa para mitigar el daño.
+		\item Recomendaciones concretas para los afectados (vigilar movimientos bancarios,
+		      cambiar contraseñas, activar alertas de fraude).
+		\item Datos de contacto del responsable o del DPD para resolver dudas.
+	\end{itemize}
+
+	\textbf{d) Registro interno del incidente (art. 33.5 RGPD):}
+
+	Con independencia de la obligación de notificar, la empresa debe documentar la brecha en su
+	registro interno de incidentes, incluyendo hechos, efectos y medidas correctoras.
+
+\end{solution}
