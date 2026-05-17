@@ -1,4 +1,5 @@
 ## Core latex/pdflatex auxiliary files:
+indent.log
 *.aux
 *.lof
 *.log
