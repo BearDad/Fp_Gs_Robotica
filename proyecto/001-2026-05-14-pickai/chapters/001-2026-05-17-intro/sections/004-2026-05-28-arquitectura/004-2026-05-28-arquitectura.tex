@@ -1,0 +1,24 @@
+\clearpage
+\fsection{Arquitectura del sistema}
+
+Desde el punto de vista técnico, el sistema está compuesto por los siguientes elementos interconectados mediante
+protocolo Profinet en la red 192.168.15.xxx:
+\begin{itemize}
+	\item Cámara Orbbec Femto Mega (192.168.15.41): cámara de profundidad 3D que captura tanto imagen en
+	      color como nube de puntos, proporcionando la información espacial necesaria para localizar
+	      las piezas en el contenedor.
+	\item PC Industrial Siemens SIMATIC IPC BX-59A (192.168.15.19): núcleo de procesamiento del sistema.
+	      Ejecuta tres contenedores Docker: uno con los drivers de la cámara, otro con el frontend
+	      web de configuración y monitorización, y un tercero con el modelo de inteligencia artificial
+	      preentrenado por Siemens para la detección del contenedor y las piezas, así como el cálculo
+	      del punto de agarre.
+	\item PLC Siemens S7-1500, modelo 1516-3 PN/DP (192.168.15.10): controlador industrial que gestiona
+	      la lógica del proceso. Se comunica con el IPC para solicitar coordenadas de agarre y con
+	      el robot para enviar las posiciones de destino. Programado mediante TIA Portal v18.
+	\item Robot colaborativo Universal Robots UR3e (192.168.15.20): brazo robótico de 6 ejes que
+	      ejecuta las operaciones de picking. Recibe las coordenadas calculadas por la IA y
+	      realiza el movimiento de agarre y depósito de la pieza.
+	\item Pinza de succión On-Robot: herramienta de efector final montada en la muñeca del robot,
+	      que realiza el agarre de las piezas mediante vacío.
+\end{itemize}
+

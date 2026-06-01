@@ -1,0 +1,4 @@
+
+\fsection{Flujo de operación}
+El ciclo de funcionamiento del sistema es el siguiente: el PLC solicita al IPC las coordenadas de la siguiente pieza a coger; el IPC, a través del modelo de IA, analiza la imagen de la cámara, detecta las piezas disponibles en el contenedor y calcula el punto óptimo de agarre; devuelve las coordenadas al PLC, que las transmite al robot; el robot se desplaza hasta la posición indicada, activa la pinza de succión, recoge la pieza y la deposita en la ubicación de destino. Si no hay más piezas, el IPC comunica al PLC que el contenedor está vacío y el proceso se detiene o reinicia según la lógica programada.
+Esta arquitectura representa un ejemplo concreto de integración de la capa OT (Operational Technology) en el marco de una Smart Factory, combinando control industrial clásico con capacidades de procesamiento de datos e inteligencia artificial ejecutadas en el propio entorno de producción, sin dependencia de sistemas cloud externos.

@@ -1,0 +1,9 @@
+\fsection{Normas de programación}
+Para el desarrollo del proyecto se siguen las siguientes convenciones y estándares de programación:
+\begin{itemize}
+	\item Programación del PLC S7-1500 mediante TIA Portal v18 o superior, siguiendo la estructura de bloques del proyecto de ejemplo de Siemens: bloque principal OB1 con llamadas a los FBs 1\_Sequence, 2\_PickAI y 3\_RobotCommunication. Las ampliaciones necesarias para la integración del sistema RFID se añadirán como FBs adicionales invocados desde el OB1.
+
+	\item Programación del robot UR3e mediante el archivo pickAi\_definitivo.URP como base, ajustando puntos de paso, posiciones de depósito y añadiendo la lógica de clasificación en función del ID RFID recibido desde el PLC.
+
+	\item Parametrización del DB4 (MachineInterface) con la dirección IP del IPC (192.168.15.19) y las dimensiones reales del contenedor utilizado, garantizando la coherencia entre la configuración del software PickAI y el programa del PLC.
+\end{itemize}

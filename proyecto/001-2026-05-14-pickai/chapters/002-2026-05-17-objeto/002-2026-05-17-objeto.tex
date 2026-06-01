@@ -2,4 +2,23 @@
 \fchapter{Objeto}
 
 
-¿Por qué se realiza el proyecto, que se persigue? Se pueden identificar varios objetivos.
+El objeto del presente proyecto es la integración, configuración y puesta en marcha de un sistema de bin picking inteligente basado en la plataforma SIMATIC Robot Pick AI de Siemens, combinando robótica colaborativa, visión artificial 3D e inteligencia artificial aplicada a la detección y manipulación de piezas en entornos no estructurados. El sistema resultante constituye una solución completa de automatización flexible, capaz de operar sin necesidad de posicionamiento previo de las piezas y de clasificarlas de forma autónoma según su identidad.
+Para ello me propongo alcanzar los siguientes objetivos:
+
+\begin{itemize}
+	\item Configurar y verificar la comunicación entre todos los elementos del sistema (cámara Orbbec Femto Mega, IPC, PLC S7-1500 y robot UR3e) mediante protocolo Profinet en la red 192.168.15.xxx.
+
+	\item Realizar la configuración del software PickAI en el IPC, incluyendo la calibración de la cámara, la calibración del robot y la configuración de la herramienta de agarre.
+
+	\item Adaptar el programa de TIA Portal proporcionado en la nota de aplicación de Siemens, ajustando los parámetros del DB4 a las características del equipamiento disponible y ampliando la lógica del programa principal para integrar la funcionalidad de clasificación.
+
+	\item Adaptar el programa del robot UR3e, ajustando los puntos de paso y las posiciones de depósito al entorno de trabajo real.
+
+	\item Integrar un sistema de identificación por radiofrecuencia (RFID) en el efector final del robot, de forma que en el momento del agarre de cada pieza se lea el tag RFID asociado y se obtenga su identificador único.
+
+	\item Implementar la lógica de clasificación en el PLC: en función del ID leído, el robot depositará la pieza en una ubicación de destino u otra, permitiendo separar y organizar los productos de forma automática sin intervención humana.
+
+	\item Validar el funcionamiento completo del sistema realizando pruebas de detección, agarre, identificación y clasificación de piezas, verificando que el robot opera de forma autónoma y deposita cada pieza en la ubicación correcta según su tipo.
+\end{itemize}
+
+Con este desarrollo se busca ir un paso más allá del sistema base de Siemens, añadiendo una capa de identificación individual de producto que amplía las posibilidades de aplicación del sistema en entornos logísticos e industriales reales, donde la trazabilidad y la clasificación automática de piezas son requisitos habituales.
