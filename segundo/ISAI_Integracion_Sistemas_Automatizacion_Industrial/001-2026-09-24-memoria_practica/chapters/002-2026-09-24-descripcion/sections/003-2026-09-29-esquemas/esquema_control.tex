@@ -1,0 +1,55 @@
+% Esquema eléctrico, hoja 1: alimentación, control y medida (circuitikz)
+\begin{circuitikz}[european, font=\large,
+		tag/.style={draw, signal, signal to=east, signal pointer angle=110, inner sep=3pt, minimum height=0.6cm, font=\normalsize}]
+	% ---------------- Red 230 V AC ----------------
+	\draw[thick] (-10,18) node[left]{L} -- (9,18) node[tag, anchor=west]{L $\to$ 2};
+	\draw[thick] (-10,17.3) node[left]{N} -- (9,17.3) node[tag, anchor=west]{N $\to$ 2};
+	\node[anchor=west] at (-10,18.4) {230\,V AC};
+
+	% ---------------- Controlador E5EC ----------------
+	\draw[thick] (0,0.3) rectangle (5.5,13.5);
+	\node[align=center] at (2.75,14.1) {\textbf{Omron E5EC-QR4D5M-000}};
+	\foreach \y/\b in {12/1, 10.5/2, 8.5/3, 7/4} {
+		\draw (0,\y) node[ocirc]{} node[right]{\b};
+	}
+	\foreach \y/\b/\f in {12/11/COM, 11/8/COM, 9.5/12/AUX1, 8.5/10/AUX2, 7.5/9/AUX3, 6.5/7/AUX4, 3/22/, 2/23/, 1/24/} {
+		\draw (5.5,\y) node[ocirc]{} node[left]{\f\ \b};
+	}
+	\node[align=left, anchor=west] at (0.6,11.25) {24\,V AC/DC};
+	\node[align=left, anchor=west] at (0.6,7.75) {OUT1\\12\,V DC};
+	\node[align=right, anchor=east] at (4.7,2) {Entrada\\Pt100};
+
+	% ---------------- Fuente 1: alimentación del controlador ----------------
+	\draw[thick] (-4,13.8) rectangle (-2,15.6);
+	\draw (-4,13.8) -- (-2,15.6);
+	\node at (-3.45,15.2) {AC};
+	\node at (-2.55,14.2) {DC};
+	\node[align=left, anchor=west] at (-1.9,14.7) {Fuente 1\\24\,V DC};
+	\draw (-3.5,15.6) -- (-3.5,18) node[circ]{};
+	\draw (-2.5,15.6) -- (-2.5,17.3) node[circ]{};
+	\draw (-2.5,13.8) -- (-2.5,12) -- (0,12) node[above left]{$+$};
+	\draw (-3.5,13.8) -- (-3.5,10.5) -- (0,10.5) node[above left]{$-$};
+
+	% ---------------- Maqueta: resistencia gobernada por OUT1 ----------------
+	\draw (0,8.5) node[above left]{$+$} -- (-4.3,8.5);
+	\draw (0,7) node[below left]{$-$} -- (-4.3,7);
+	\draw[thick] (-9.8,6.3) rectangle (-4.3,9.2);
+	\node[align=center] at (-7.4,7.75) {Maqueta MT-542\\Resistencia calefactora\\entrada ext. (0--10\,V)};
+	\draw (-4.3,8.5) node[ocirc]{} node[left]{ext};
+	\draw (-4.3,7) node[ocirc]{} node[left]{0\,V};
+	\draw (-7,9.2) node[ocirc]{} -- (-7,18) node[circ]{};
+	\draw (-5.6,9.2) node[ocirc]{} -- (-5.6,17.3) node[circ]{};
+
+	% ---------------- Salidas auxiliares: continúan en la hoja 2 ----------------
+	\draw (5.5,11) -- (6.5,11) -- (6.5,12) node[circ]{};
+	\draw (5.5,12) -- (8,12) node[tag, anchor=west]{+12\,V $\to$ 2};
+	\foreach \y/\t in {9.5/AL1, 8.5/AL2, 7.5/AL3, 6.5/AL4} {
+		\draw (5.5,\y) -- (8,\y) node[tag, anchor=west]{\t\ $\to$ 2};
+	}
+
+	% ---------------- Sonda Pt100 a 3 hilos ----------------
+	\draw (5.5,3) node[above right]{A} -- (7.8,3)
+		to[R, l^=Pt100] (7.8,-0.3) -- (7,-0.3) node[circ]{};
+	\draw (7,-0.3) -- (7,2) -- (5.5,2) node[above right]{B};
+	\draw (7,-0.3) -- (6.5,-0.3) -- (6.5,1) -- (5.5,1) node[above right]{B};
+\end{circuitikz}

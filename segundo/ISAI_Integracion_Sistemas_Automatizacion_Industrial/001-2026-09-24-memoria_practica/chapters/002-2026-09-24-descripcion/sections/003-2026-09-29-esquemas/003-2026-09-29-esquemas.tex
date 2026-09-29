@@ -1,9 +1,20 @@
 \fsection{Esquemas}
 
-En la figura siguiente se muestra el esquema eléctrico completo de la instalación: la red de 230\,V AC con las dos fuentes y sus protecciones, la alimentación del controlador, la conexión de la sonda Pt100 a tres hilos, la salida de control 1 hacia la entrada externa de la resistencia de la maqueta y las cuatro salidas auxiliares de alarma, con sus comunes puenteados al positivo de la fuente de cargas.
+El esquema eléctrico de la instalación se ha dividido en dos hojas para facilitar su lectura. Las señales que continúan de una hoja a otra se indican con etiquetas que llevan el nombre de la señal y el número de la hoja de destino.
+
+La hoja 1 recoge la red de 230\,V AC, la alimentación del controlador desde la fuente 1, la salida de control 1 hacia la entrada externa de la resistencia de la maqueta, la conexión de la sonda Pt100 a tres hilos y los bornes de las salidas auxiliares, con sus comunes puenteados:
 
 \begin{figure}[H]
 	\centering
-	\resizebox{\linewidth}{!}{\subimport{./}{esquema.tex}}
-	\caption{Esquema eléctrico de la instalación}
+	\resizebox{\linewidth}{!}{\subimport{./}{esquema_control.tex}}
+	\caption{Esquema eléctrico, hoja 1: alimentación, control y medida}
+\end{figure}
+
+\clearpage
+La hoja 2 recoge la fuente 2 con sus fusibles de protección, el positivo de 12\,V DC que alimenta los comunes de las alarmas y las cargas gobernadas por cada salida, todas ellas con retorno al 0\,V de la misma fuente:
+
+\begin{figure}[H]
+	\centering
+	\resizebox{\linewidth}{!}{\subimport{./}{esquema_alarmas.tex}}
+	\caption{Esquema eléctrico, hoja 2: fuente de cargas y salidas de alarma}
 \end{figure}

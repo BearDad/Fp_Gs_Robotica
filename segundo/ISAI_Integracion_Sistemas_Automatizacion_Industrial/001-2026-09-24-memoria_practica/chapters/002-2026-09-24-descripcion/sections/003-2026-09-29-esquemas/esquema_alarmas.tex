@@ -1,0 +1,35 @@
+% Esquema eléctrico, hoja 2: fuente de cargas y salidas de alarma (circuitikz)
+\begin{circuitikz}[european, font=\large,
+		tag/.style={draw, signal, signal from=west, signal pointer angle=110, inner sep=3pt, minimum height=0.6cm, font=\normalsize}]
+	% ---------------- Red 230 V AC (viene de la hoja 1) ----------------
+	\draw[thick] (0,18) node[tag, anchor=east]{1 $\to$ L} -- (20,18);
+	\draw[thick] (0,17.3) node[tag, anchor=east]{1 $\to$ N} -- (20,17.3);
+
+	% ---------------- Fuente 2 (EP-603): alimentación de las cargas ----------------
+	\draw (16.5,18) node[circ]{} to[fuse, l_=F3] (16.5,15.6);
+	\draw (17.5,17.3) node[circ]{} to[fuse, l^=F4] (17.5,15.6);
+	\draw[thick] (16,13.8) rectangle (18,15.6);
+	\draw (16,13.8) -- (18,15.6);
+	\node at (16.55,15.2) {AC};
+	\node at (17.45,14.2) {DC};
+	\node[align=left, anchor=west] at (18.1,14.7) {Fuente 2\\EP-603\\12\,V DC};
+
+	% +12 V hacia los comunes del E5EC (bornes 11 y 8, hoja 1)
+	\draw (0,12) node[tag, anchor=east]{1 $\to$ +12\,V} -- (16.5,12) node[above right]{$+$} -- (16.5,13.8);
+
+	% ---------------- Cargas gobernadas por las alarmas ----------------
+	\draw (0,9.5) node[tag, anchor=east]{1 $\to$ AL1} -- (13.5,9.5) to[lamp] (13.5,3.8);
+	\node[align=left, anchor=west] at (14,6.6) {P1\\Piloto\\amarillo\\(ALM1)};
+	\draw (0,8.5) node[tag, anchor=east]{1 $\to$ AL2} -- (10,8.5) to[lamp] (10,3.8);
+	\node[align=left, anchor=west] at (10.5,6.1) {P2\\Piloto\\verde\\(ALM2)};
+	\draw (0,7.5) node[tag, anchor=east]{1 $\to$ AL3} -- (6.5,7.5) to[lamp] (6.5,3.8);
+	\node[align=left, anchor=west] at (7,5.6) {P3\\Piloto\\rojo\\(ALM3)};
+	\draw (0,6.5) node[tag, anchor=east]{1 $\to$ AL4} -- (2,6.5) -- (2,5.8);
+	\draw (2,5.2) circle (0.6) node{M};
+	\draw (2,4.6) -- (2,3.8);
+	\node[align=left, anchor=west] at (2.7,5.2) {Ventilador\\(ALM4)};
+
+	% ---------------- Retorno a 0 V ----------------
+	\draw (2,3.8) node[circ]{} -- (6.5,3.8) node[circ]{} -- (10,3.8) node[circ]{} -- (13.5,3.8) node[circ]{} -- (17.5,3.8) -- (17.5,13.8);
+	\node[anchor=west] at (17.6,12.8) {0\,V};
+\end{circuitikz}
