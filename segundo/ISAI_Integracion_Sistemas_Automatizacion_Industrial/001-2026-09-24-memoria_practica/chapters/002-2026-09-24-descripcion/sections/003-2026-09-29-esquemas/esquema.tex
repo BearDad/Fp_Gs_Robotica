@@ -1,80 +1,80 @@
 % Esquema eléctrico de la instalación (circuitikz)
-\begin{circuitikz}[european, scale=0.72, transform shape, font=\small]
+\begin{circuitikz}[european, scale=0.72, transform shape, font=\large]
 	% ---------------- Red 230 V AC ----------------
-	\draw[thick] (-9,18) node[left]{L} -- (18,18);
-	\draw[thick] (-9,17.3) node[left]{N} -- (18,17.3);
-	\node[anchor=west, font=\scriptsize] at (-9,18.35) {230\,V AC};
+	\draw[thick] (-10,18) node[left]{L} -- (22.5,18);
+	\draw[thick] (-10,17.3) node[left]{N} -- (22.5,17.3);
+	\node[anchor=west, font=\large] at (-10,18.35) {230\,V AC};
 
 	% ---------------- Controlador E5EC ----------------
-	\draw[thick] (0,0.3) rectangle (4,13.5);
-	\node[align=center] at (2,14.1) {\textbf{Omron E5EC-QR4D5M-000}};
+	\draw[thick] (0,0.3) rectangle (5.5,13.5);
+	\node[align=center] at (2.75,14.1) {\textbf{Omron E5EC-QR4D5M-000}};
 	% Bornes lado izquierdo
 	\foreach \y/\b in {12/1, 10.5/2, 8.5/3, 7/4} {
-		\draw (0,\y) node[ocirc]{} node[right, font=\scriptsize]{\b};
+		\draw (0,\y) node[ocirc]{} node[right, font=\large]{\b};
 	}
 	% Bornes lado derecho
 	\foreach \y/\b/\f in {12/11/COM, 11/8/COM, 9.5/12/AUX1, 8.5/10/AUX2, 7.5/9/AUX3, 6.5/7/AUX4} {
-		\draw (4,\y) node[ocirc]{} node[left, font=\scriptsize]{\f\ \b};
+		\draw (5.5,\y) node[ocirc]{} node[left, font=\large]{\f\ \b};
 	}
 	\foreach \y/\b in {3/22, 2/23, 1/24} {
-		\draw (4,\y) node[ocirc]{} node[left, font=\scriptsize]{\b};
+		\draw (5.5,\y) node[ocirc]{} node[left, font=\large]{\b};
 	}
-	\node[align=left, anchor=west, font=\scriptsize] at (0.6,11.25) {24\,V AC/DC};
-	\node[align=left, anchor=west, font=\scriptsize] at (0.6,7.75) {OUT1\\12\,V DC};
-	\node[align=right, anchor=east, font=\scriptsize] at (3.2,2) {Entrada\\Pt100};
+	\node[align=left, anchor=west, font=\large] at (0.6,11.25) {24\,V AC/DC};
+	\node[align=left, anchor=west, font=\large] at (0.6,7.75) {OUT1\\12\,V DC};
+	\node[align=right, anchor=east, font=\large] at (4.7,2) {Entrada\\Pt100};
 
 	% ---------------- Fuente 1: alimentación del controlador ----------------
 	\draw[thick] (-4,13.8) rectangle (-2,15.6);
 	\draw (-4,13.8) -- (-2,15.6);
-	\node[font=\scriptsize] at (-3.45,15.2) {AC};
-	\node[font=\scriptsize] at (-2.55,14.2) {DC};
-	\node[align=right, anchor=east, font=\scriptsize] at (-4.1,14.7) {Fuente 1\\24\,V DC};
+	\node[font=\large] at (-3.45,15.2) {AC};
+	\node[font=\large] at (-2.55,14.2) {DC};
+	\node[align=right, anchor=east, font=\large] at (-4.1,14.7) {Fuente 1\\24\,V DC};
 	\draw (-3.5,15.6) -- (-3.5,18) node[circ]{};
 	\draw (-2.5,15.6) -- (-2.5,17.3) node[circ]{};
-	\draw (-2.5,13.8) -- (-2.5,12) -- (0,12) node[above left, font=\scriptsize]{$+$};
-	\draw (-3.5,13.8) -- (-3.5,10.5) -- (0,10.5) node[above left, font=\scriptsize]{$-$};
+	\draw (-2.5,13.8) -- (-2.5,12) -- (0,12) node[above left, font=\large]{$+$};
+	\draw (-3.5,13.8) -- (-3.5,10.5) -- (0,10.5) node[above left, font=\large]{$-$};
 
 	% ---------------- Maqueta: resistencia gobernada por OUT1 ----------------
-	\draw (0,8.5) node[above left, font=\scriptsize]{$+$} -- (-4.3,8.5);
-	\draw (0,7) node[below left, font=\scriptsize]{$-$} -- (-4.3,7);
-	\draw[thick] (-8.3,6.3) rectangle (-4.3,9.2);
-	\node[align=center, font=\scriptsize] at (-6.3,7.75) {Maqueta MT-542\\Resistencia calefactora\\entrada ext. (0--10\,V)};
-	\draw (-4.3,8.5) node[ocirc]{} node[left, font=\scriptsize]{ext};
-	\draw (-4.3,7) node[ocirc]{} node[left, font=\scriptsize]{0\,V};
+	\draw (0,8.5) node[above left, font=\large]{$+$} -- (-4.3,8.5);
+	\draw (0,7) node[below left, font=\large]{$-$} -- (-4.3,7);
+	\draw[thick] (-9.8,6.3) rectangle (-4.3,9.2);
+	\node[align=center, font=\large] at (-7.4,7.75) {Maqueta MT-542\\Resistencia calefactora\\entrada ext. (0--10\,V)};
+	\draw (-4.3,8.5) node[ocirc]{} node[left, font=\large]{ext};
+	\draw (-4.3,7) node[ocirc]{} node[left, font=\large]{0\,V};
 	\draw (-7,9.2) node[ocirc]{} -- (-7,18) node[circ]{};
 	\draw (-5.6,9.2) node[ocirc]{} -- (-5.6,17.3) node[circ]{};
 
 	% ---------------- Sonda Pt100 a 3 hilos ----------------
-	\draw (4,3) node[above right, font=\scriptsize]{A} -- (6.3,3)
-		to[R, l^=Pt100] (6.3,-0.3) -- (5.5,-0.3) node[circ]{};
-	\draw (5.5,-0.3) -- (5.5,2) -- (4,2) node[above right, font=\scriptsize]{B};
-	\draw (5.5,-0.3) -- (5,-0.3) -- (5,1) -- (4,1) node[above right, font=\scriptsize]{B};
+	\draw (5.5,3) node[above right, font=\large]{A} -- (7.8,3)
+		to[R, l^=Pt100] (7.8,-0.3) -- (7,-0.3) node[circ]{};
+	\draw (7,-0.3) -- (7,2) -- (5.5,2) node[above right, font=\large]{B};
+	\draw (7,-0.3) -- (6.5,-0.3) -- (6.5,1) -- (5.5,1) node[above right, font=\large]{B};
 
 	% ---------------- Fuente 2 (EP-603): alimentación de las cargas ----------------
-	\draw (15.5,18) node[circ]{} to[fuse, l_=F3] (15.5,15.6);
-	\draw (16.5,17.3) node[circ]{} to[fuse, l^=F4] (16.5,15.6);
-	\draw[thick] (15,13.8) rectangle (17,15.6);
-	\draw (15,13.8) -- (17,15.6);
-	\node[font=\scriptsize] at (15.55,15.2) {AC};
-	\node[font=\scriptsize] at (16.45,14.2) {DC};
-	\node[align=left, anchor=west, font=\scriptsize] at (17.1,14.7) {Fuente 2\\EP-603\\12\,V DC};
+	\draw (19.5,18) node[circ]{} to[fuse, l_=F3] (19.5,15.6);
+	\draw (20.5,17.3) node[circ]{} to[fuse, l^=F4] (20.5,15.6);
+	\draw[thick] (19,13.8) rectangle (21,15.6);
+	\draw (19,13.8) -- (21,15.6);
+	\node[font=\large] at (19.55,15.2) {AC};
+	\node[font=\large] at (20.45,14.2) {DC};
+	\node[align=left, anchor=west, font=\large] at (21.1,14.7) {Fuente 2\\EP-603\\12\,V DC};
 
 	% ---------------- Salidas de alarma ----------------
 	% Puente de los comunes al +12 V
-	\draw (4,12) -- (5,12) node[circ]{};
-	\draw (4,11) -- (5,11) -- (5,13) -- (15.5,13) node[above right, font=\scriptsize]{$+$} -- (15.5,13.8);
+	\draw (5.5,12) -- (6.5,12) node[circ]{};
+	\draw (5.5,11) -- (6.5,11) -- (6.5,13) -- (19.5,13) node[above right, font=\large]{$+$} -- (19.5,13.8);
 	% Cargas
-	\draw (4,9.5) -- (14,9.5) to[lamp] (14,3.8);
-	\node[align=left, anchor=west, font=\scriptsize] at (14.5,6.6) {P1\\Piloto\\amarillo\\(ALM1)};
-	\draw (4,8.5) -- (12,8.5) to[lamp] (12,3.8);
-	\node[align=left, anchor=west, font=\scriptsize] at (12.5,6.1) {P2\\Piloto\\verde\\(ALM2)};
-	\draw (4,7.5) -- (9.5,7.5) -- (9.5,6.4);
-	\draw (9.5,5.8) circle (0.6) node{M};
-	\draw (9.5,5.2) -- (9.5,3.8);
-	\node[align=left, anchor=west, font=\scriptsize] at (10.15,5.8) {Ventilador\\(ALM4)};
-	\draw (4,6.5) -- (7,6.5) to[lamp] (7,3.8);
-	\node[align=left, anchor=west, font=\scriptsize] at (7.5,5.1) {P3\\Piloto\\rojo\\(ALM3)};
+	\draw (5.5,9.5) -- (17,9.5) to[lamp] (17,3.8);
+	\node[align=left, anchor=west, font=\large] at (17.5,6.6) {P1\\Piloto\\amarillo\\(ALM1)};
+	\draw (5.5,8.5) -- (14,8.5) to[lamp] (14,3.8);
+	\node[align=left, anchor=west, font=\large] at (14.5,6.1) {P2\\Piloto\\verde\\(ALM2)};
+	\draw (5.5,7.5) -- (10,7.5) -- (10,6.4);
+	\draw (10,5.8) circle (0.6) node{M};
+	\draw (10,5.2) -- (10,3.8);
+	\node[align=left, anchor=west, font=\large] at (10.65,5.8) {Ventilador\\(ALM4)};
+	\draw (5.5,6.5) -- (7,6.5) to[lamp] (7,3.8);
+	\node[align=left, anchor=west, font=\large] at (7.5,5.1) {P3\\Piloto\\rojo\\(ALM3)};
 	% Retorno a 0 V
-	\draw (7,3.8) node[circ]{} -- (9.5,3.8) node[circ]{} -- (12,3.8) node[circ]{} -- (14,3.8) node[circ]{} -- (16.5,3.8) -- (16.5,13.8);
-	\node[font=\scriptsize, anchor=west] at (16.6,12.8) {0\,V};
+	\draw (7,3.8) node[circ]{} -- (10,3.8) node[circ]{} -- (14,3.8) node[circ]{} -- (17,3.8) node[circ]{} -- (20.5,3.8) -- (20.5,13.8);
+	\node[font=\large, anchor=west] at (20.6,12.8) {0\,V};
 \end{circuitikz}
