@@ -1,0 +1,57 @@
+\fsection{Configuración de controladores}
+
+La configuración del controlador Omron E5EC se ha realizado directamente desde los botones del panel frontal, sin utilizar software externo. Los parámetros del E5EC están organizados en niveles, entre los que se navega con la tecla de nivel:
+
+\begin{itemize}
+	\item \textbf{Nivel de configuración inicial:} contiene los parámetros básicos del equipo, como el tipo de entrada, el modo de control y el tipo de cada alarma. Se accede manteniendo pulsada la tecla de nivel durante al menos 3 segundos; mientras se está en este nivel el controlador detiene la regulación.
+	\item \textbf{Nivel de ajuste:} contiene, entre otros, la ejecución del autotuning y los parámetros PID.
+	\item \textbf{Nivel de operación:} es el nivel de trabajo normal, donde se muestran la temperatura medida (PV) y la consigna (SV), y donde se ajustan la consigna y los valores de las alarmas.
+\end{itemize}
+
+\fsubsection{Tipo de entrada}
+
+En primer lugar, en el nivel de configuración inicial, se ha ajustado el parámetro de tipo de entrada (\texttt{in-t}) al valor 0, que corresponde a una sonda Pt100 con un rango de medida de $-200$ a 850\,\textdegree C. Por defecto el E5EC viene configurado para un termopar tipo K (valor 5), por lo que es imprescindible cambiar este parámetro: si el tipo de entrada no coincide con el sensor conectado, el controlador muestra un error de entrada (\texttt{s.err}) o una lectura incorrecta.
+
+\fsubsection{Modo de control}
+
+Por defecto el E5EC trabaja en control todo/nada (ON/OFF), por lo que se ha cambiado el parámetro \texttt{cntl} a \texttt{pid} para seleccionar el control PID. De esta forma que el controlador regula la potencia entregada a la resistencia a través de la salida de control 1 en función de la desviación entre la temperatura medida y la consigna, en lugar de limitarse a encenderla y apagarla.
+
+\fsubsection{Configuración de las alarmas}
+
+Siguiendo en el nivel de configuración inicial, se ha elegido el tipo de cada alarma en los parámetros \texttt{alt1}, \texttt{alt2}, \texttt{alt3} y \texttt{alt4}. Se han combinado dos clases de alarma: las de valor absoluto, que se activan a una temperatura fija, y las de desviación, cuyos valores se definen respecto al punto de consigna y se desplazan con él si este cambia:
+
+\begin{table}[H]
+	\centering
+	\begin{tabularx}{\linewidth}{|C{1.6cm}|C{2.2cm}|Y|C{3.2cm}|}
+		\hline
+		\makecell{\textbf{Alarma}} & \makecell{\textbf{Elemento}} & \makecell{\textbf{Tipo de alarma}} & \makecell{\textbf{Valores}} \\
+		\hline
+		ALM1 & Piloto amarillo & \texttt{alt1} = 9: alarma de límite inferior de valor absoluto & \texttt{al-1} = 50\,\textdegree C \\
+		\hline
+		ALM2 & Piloto verde & \texttt{alt2} = 4: alarma de rango de límites superior e inferior de desviación (activa dentro de la banda) & \texttt{al2h} = 1\,\textdegree C \newline \texttt{al2l} = 3\,\textdegree C \\
+		\hline
+		ALM3 & Piloto rojo & \texttt{alt3} = 8: alarma de límite superior de valor absoluto & \texttt{al-3} = 60\,\textdegree C \\
+		\hline
+		ALM4 & Ventilador & \texttt{alt4} = 2: alarma de límite superior de desviación & \texttt{al-4} = 2\,\textdegree C \\
+		\hline
+	\end{tabularx}
+	\caption{Tipos y valores de las alarmas configuradas}
+\end{table}
+
+En las alarmas de valor absoluto (pilotos amarillo y rojo) el valor introducido es directamente la temperatura de activación. En las de desviación (piloto verde y ventilador) el valor es la distancia respecto a la consigna; en la alarma de tipo 4 los límites superior (\texttt{al2h}) e inferior (\texttt{al2l}) se ajustan de forma independiente, lo que permite que la banda del piloto verde sea asimétrica respecto al punto de consigna.
+
+Una vez elegidos los tipos, se vuelve al nivel de operación y se introducen allí la consigna de 55\,\textdegree C y los valores de cada alarma indicados en la tabla.
+
+\fsubsection{Autotuning}
+
+Por último, se ha ejecutado el autotuning (AT) desde el nivel de ajuste, seleccionando en el parámetro \texttt{at} la opción \texttt{at-2} (autotuning al 100\,\%). Mientras dura el proceso el indicador TUNE del frontal permanece encendido, y se apaga al terminar. Durante este proceso el controlador provoca oscilaciones controladas de la temperatura alrededor de la consigna y, a partir de la respuesta del horno, calcula automáticamente los parámetros PID (banda proporcional, tiempo integral y tiempo derivativo) más adecuados. Al terminar, el controlador pasa a regular con estos parámetros sin necesidad de ajustarlos a mano.
+
+\fsubsection{Comprobación del funcionamiento}
+
+Con el controlador ya configurado se ha comprobado el funcionamiento del conjunto: el horno se calienta hasta estabilizarse en torno a los 55\,\textdegree C, el piloto amarillo permanece encendido mientras la temperatura está por debajo de 50\,\textdegree C, el piloto verde se enciende al entrar en la banda de 52 a 56\,\textdegree C, el ventilador arranca a partir de 57\,\textdegree C y el piloto rojo indica temperatura elevada por encima de 60\,\textdegree C.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=7cm]{display_e5ec.jpg}
+	\caption{Controlador E5EC en funcionamiento durante el calentamiento (PV = 50\,\textdegree C, SV = 55\,\textdegree C)}
+\end{figure}

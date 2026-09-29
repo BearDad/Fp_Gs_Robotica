@@ -1,0 +1,110 @@
+\fsection{Montaje}
+
+El montaje se ha realizado sobre el banco de trabajo del aula. Todas las conexiones se han hecho con cables de banana conectados directamente a las bornas del controlador, la maqueta, el módulo de señalización y las fuentes, sin necesidad de punteras.
+
+Los elementos utilizados son los siguientes:
+
+\begin{itemize}
+	\item Controlador de temperatura Omron E5EC-QR4D5M-000, con alimentación de 24\,V AC/DC, salida de control 1 de tensión (12\,V DC para SSR), salida de control 2 de relé y cuatro salidas auxiliares de relé.
+	\item Maqueta de horno Alecop MT-542, con resistencia calefactora y ventilador.
+	\item Sonda Pt100 de tres hilos.
+	\item Módulo de señalización con tres pilotos luminosos: amarillo, verde y rojo.
+	\item Red de 230\,V AC, que alimenta las dos fuentes y la maqueta.
+	\item Fuente de alimentación de 24\,V DC para el controlador.
+	\item Fuente de alimentación regulable EP-603 (0 a 30\,V DC) para las cargas.
+	\item Cables de banana para el conexionado.
+\end{itemize}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=8cm]{montaje_general.jpg}
+	\caption{Montaje de la práctica en el banco de trabajo}
+\end{figure}
+
+\fsubsection{Alimentación}
+
+Todo el conjunto se alimenta desde la red de 230\,V AC del banco, de la que toman tensión la maqueta del horno y las dos fuentes de alimentación. La fuente de las cargas se protege con los fusibles F3 y F4 en la fase y el neutro.
+
+Se han utilizado dos fuentes de alimentación independientes. Una fuente de 24\,V DC alimenta el controlador E5EC a través de sus bornes 1 y 2, que no tienen polaridad al admitir tanto alterna como continua. La fuente regulable EP-603, ajustada a 12\,V DC, alimenta las cargas que conmutan los relés de alarma: los pilotos del módulo de señalización y el ventilador de la maqueta, cuya entrada externa admite como máximo 15\,V. De esta forma se separa la alimentación del equipo de control de la de las cargas.
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{0.48\linewidth}
+		\centering
+		\includegraphics[height=5cm]{fuente_24v.jpg}
+		\caption{Fuente de 24\,V DC del controlador}
+	\end{minipage}\hfill
+	\begin{minipage}{0.48\linewidth}
+		\centering
+		\includegraphics[height=5cm]{fuente_ep603.jpg}
+		\caption{Fuente regulable EP-603 para las cargas}
+	\end{minipage}
+\end{figure}
+
+\fsubsection{Conexión de la sonda Pt100}
+
+La sonda Pt100 es de tres hilos y se conecta a la entrada de sensor del controlador, que en el E5EC corresponde a los bornes 22, 23 y 24. El extremo A de la resistencia de la Pt100 va al borne 22 y los dos hilos del extremo B van a los bornes 23 y 24, de modo que la resistencia de medida queda entre los bornes 22 y 23. El tercer hilo, conectado al borne 24, permite al controlador compensar la resistencia de los cables, de modo que la longitud del cableado no falsea la medida de temperatura.
+
+\begin{table}[H]
+	\centering
+	\begin{tabularx}{0.6\linewidth}{|C{2cm}|C{2cm}|Y|}
+		\hline
+		\makecell{\textbf{Borne}} & \makecell{\textbf{Terminal Pt}} & \makecell{\textbf{Conexión}} \\
+		\hline
+		22 & A & Extremo A de la Pt100 \\
+		\hline
+		23 & B & Extremo B de la Pt100 \\
+		\hline
+		24 & B & Hilo de compensación (extremo B) \\
+		\hline
+	\end{tabularx}
+	\caption{Conexión de la Pt100 a la entrada del E5EC}
+\end{table}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=7cm]{etiqueta_bornes_e5ec.jpg}
+	\caption{Etiqueta de bornes del E5EC y conexión de la sonda Pt100 en los bornes 22, 23 y 24}
+\end{figure}
+
+\fsubsection{Salida de control}
+
+La salida de control 1 del E5EC es una salida de tensión de 12\,V DC, disponible entre los bornes 3 ($+$) y 4 ($-$). Se ha conectado a la entrada externa de mando de la resistencia calefactora de la maqueta, con el conmutador de la resistencia en posición \textit{ext}, y el borne 4 al 0\,V de la maqueta. La potencia de la resistencia la proporciona la propia maqueta; el controlador solo le envía la orden de conexión, activando y desactivando la salida en función del cálculo del PID.
+
+\fsubsection{Salidas de alarma}
+
+Las cuatro alarmas se han asignado a las salidas auxiliares de relé del controlador: ALM1 al piloto amarillo, ALM2 al piloto verde, ALM3 al piloto rojo y ALM4 al ventilador. En el E5EC las salidas auxiliares comparten borne común por parejas: el borne 11 es común de las salidas 1 y 2, y el borne 8 es común de las salidas 3 y 4.
+
+El positivo de 12\,V DC de la fuente EP-603 se ha puenteado a los dos bornes comunes (8 y 11). Cada borne de salida de alarma se lleva a su elemento correspondiente y el otro extremo de todos los elementos se conecta al negativo (0\,V) de la misma fuente. En el caso del ventilador, su conmutador se coloca en posición \textit{ext} para que sea gobernado desde la entrada externa. Así, cuando una alarma se activa, su relé cierra el contacto entre el común y la salida y el elemento queda alimentado.
+
+\begin{table}[H]
+	\centering
+	\begin{tabularx}{0.8\linewidth}{|C{2cm}|C{2.5cm}|Y|}
+		\hline
+		\makecell{\textbf{Salida}} & \makecell{\textbf{Bornes}} & \makecell{\textbf{Elemento}} \\
+		\hline
+		ALM1 & 11 (común) -- 12 & Piloto amarillo \\
+		\hline
+		ALM2 & 11 (común) -- 10 & Piloto verde \\
+		\hline
+		ALM3 & 8 (común) -- 9 & Piloto rojo \\
+		\hline
+		ALM4 & 8 (común) -- 7 & Ventilador \\
+		\hline
+	\end{tabularx}
+	\caption{Conexionado de las salidas de alarma del E5EC}
+\end{table}
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{0.48\linewidth}
+		\centering
+		\includegraphics[height=7cm]{bornes_e5ec.jpg}
+		\caption{Cableado de los bornes del E5EC}
+	\end{minipage}\hfill
+	\begin{minipage}{0.48\linewidth}
+		\centering
+		\includegraphics[height=7cm]{modulo_senalizacion.jpg}
+		\caption{Módulo de señalización}
+	\end{minipage}
+\end{figure}

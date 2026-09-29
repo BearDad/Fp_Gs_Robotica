@@ -1,7 +1,7 @@
 \documentclass[spanish,openany]{report}
 \usepackage{wrapfig}
-\usepackage[european]{circuitikz}
 \input{/home/kuma/git/Clase/template/preamble.tex}
+\input{./settings/setting.tex}
 \input{/home/kuma/git/Clase/template/macros.tex}
 \input{/home/kuma/git/Clase/template/letterfonts.tex}
 \usepackage[backend=biber,style=ieee, sorting=none]{biblatex}
@@ -15,14 +15,6 @@
 \usepackage{titling}
 \usepackage{afterpage}
 
-% Hueco para imagen pendiente: \imagenpendiente{qué foto/captura va}{pie de figura}
-% Sustituir por \includegraphics cuando tengas la imagen
-\newcommand{\imagenpendiente}[2]{%
-	\begin{figure}[H]
-		\centering
-		\fbox{\parbox[c][5cm][c]{0.8\linewidth}{\centering\textbf{IMAGEN:} #1}}
-		\caption{#2}
-	\end{figure}}
 
 
 
@@ -36,7 +28,7 @@
 { 2° CFGS Automatización y Robótica Industrial\\
 	Integración de Sistemas de Automatización Industrial\\
 	Profesora: María Dolores García Alfaro}
-{5758488-2803633114.jpg} % TODO: sustituir por imagen en ./images/
+{portada_maqueta.jpg}
 %----------------------------------------------------------------------------------------
 %                               TABLE OF CONTENTS
 %----------------------------------------------------------------------------------------
@@ -74,10 +66,10 @@
 %	                            DOCUMENT
 %----------------------------------------------------------------------------------------
 \phantomsection
-\input{chapters/001-2026-09-24-objetivos/001-2026-09-24-objetivos.tex}
-\input{chapters/002-2026-09-24-descripcion/002-2026-09-24-descripcion.tex}
-\input{chapters/003-2026-09-24-realizacion/003-2026-09-24-realizacion.tex}
-\input{chapters/004-2026-09-24-conclusion/004-2026-09-24-conclusion.tex}
+\subimport{./chapters/001-2026-09-24-objetivos/}{001-2026-09-24-objetivos.tex}
+\subimport{./chapters/002-2026-09-24-descripcion/}{002-2026-09-24-descripcion.tex}
+\subimport{./chapters/003-2026-09-24-realizacion/}{003-2026-09-24-realizacion.tex}
+\subimport{./chapters/004-2026-09-24-conclusion/}{004-2026-09-24-conclusion.tex}
 
 
 

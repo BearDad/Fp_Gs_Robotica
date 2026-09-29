@@ -1,0 +1,46 @@
+\fsection{Funcionamiento}
+
+La práctica se ha realizado sobre la maqueta de horno Alecop MT-542, que dispone de una resistencia calefactora y de un ventilador, ambos con una entrada de mando externa. La temperatura del horno se mide con una sonda Pt100 que se conecta a la entrada de medida del controlador Omron E5EC. El controlador compara la temperatura medida con el punto de consigna (SV) fijado por el usuario y regula, mediante su salida de control 1, la resistencia calefactora del horno para mantener la temperatura en dicho valor.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=7cm]{maqueta_mt542.jpg}
+	\caption{Maqueta de horno Alecop MT-542}
+\end{figure}
+
+Se trata, por tanto, de un control automático en lazo cerrado. El controlador calcula el error ($e$) entre la consigna (SV) y la temperatura medida por la Pt100 (PV) y, a partir de él, el algoritmo PID determina la salida de control (MV) que se aplica a la resistencia calefactora. El calor aportado modifica la temperatura del horno, que vuelve a medirse y a realimentarse al controlador, cerrando el lazo:
+
+\begin{figure}[H]
+	\centering
+	\resizebox{\linewidth}{!}{\subimport{./}{lazo.tex}}
+	\caption{Esquema de lazo cerrado del control de temperatura}
+\end{figure}
+
+En esta práctica se ha trabajado con un punto de consigna de 55\,\textdegree C. Para señalizar el estado del proceso se han configurado cuatro alarmas, cada una asignada a una salida de relé del controlador que activa un elemento. Tres de ellas gobiernan los pilotos del módulo de señalización y la cuarta el ventilador de la maqueta:
+
+\begin{itemize}
+	\item \textbf{ALM1 -- Piloto amarillo:} se activa cuando la temperatura es inferior a 50\,\textdegree C, indicando que el horno todavía está frío.
+	\item \textbf{ALM2 -- Piloto verde:} se activa cuando la temperatura está próxima a la consigna, desde 3\,\textdegree C por debajo hasta 1\,\textdegree C por encima del SV. Para una consigna de 55\,\textdegree C permanece encendido entre 52 y 56\,\textdegree C.
+	\item \textbf{ALM3 -- Piloto rojo:} se activa cuando la temperatura supera los 60\,\textdegree C, indicando una temperatura elevada.
+	\item \textbf{ALM4 -- Ventilador:} se activa cuando la temperatura supera en 2\,\textdegree C el punto de consigna (57\,\textdegree C para SV = 55\,\textdegree C), poniendo en marcha el ventilador para enfriar el horno.
+\end{itemize}
+
+\begin{table}[H]
+	\centering
+	\begin{tabularx}{\linewidth}{|C{2cm}|C{2.7cm}|Y|C{3cm}|}
+		\hline
+		\makecell{\textbf{Salida}} & \makecell{\textbf{Elemento}} & \makecell{\textbf{Condición de activación}} & \makecell{\textbf{Con SV = 55\,\textdegree C}} \\
+		\hline
+		ALM1 & Piloto amarillo & $PV < 50$\,\textdegree C & $< 50$\,\textdegree C \\
+		\hline
+		ALM2 & Piloto verde & $SV - 3 \leq PV \leq SV + 1$ & 52 -- 56\,\textdegree C \\
+		\hline
+		ALM3 & Piloto rojo & $PV > 60$\,\textdegree C & $> 60$\,\textdegree C \\
+		\hline
+		ALM4 & Ventilador & $PV \geq SV + 2$ & $\geq 57$\,\textdegree C \\
+		\hline
+	\end{tabularx}
+	\caption{Resumen de las alarmas configuradas}
+\end{table}
+
+Las alarmas de los pilotos amarillo y rojo están referidas a temperaturas fijas (50 y 60\,\textdegree C), mientras que las del piloto verde y del ventilador están referidas al punto de consigna y se desplazan con él si este cambia.
