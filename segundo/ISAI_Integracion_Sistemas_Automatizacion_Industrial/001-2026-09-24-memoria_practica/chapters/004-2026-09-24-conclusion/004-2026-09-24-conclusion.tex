@@ -1,0 +1,9 @@
+\fchapter{Conclusión}
+
+En esta práctica se ha planificado y montado el control de temperatura de la maqueta de un horno mediante un controlador Omron E5EC, consiguiendo que el sistema mantenga la temperatura en el punto de consigna de 55\,\textdegree C y que señalice su estado a través de los pilotos y el ventilador.
+
+La práctica ha permitido conocer el funcionamiento de un controlador de temperatura industrial y su organización por niveles de parámetros, así como la importancia de configurar correctamente el tipo de entrada según el sensor conectado, ya que un error en este parámetro impide obtener una medida válida.
+
+También se ha comprobado la utilidad de combinar distintos tipos de alarma: las de valor absoluto permiten vigilar temperaturas fijas, como el límite de temperatura elevada, mientras que las de desviación, al estar referidas al punto de consigna, se desplazan con ella sin necesidad de volver a ajustarlas. Del mismo modo, el uso de las salidas de relé de las alarmas para gobernar elementos externos, alimentados desde una fuente independiente, muestra cómo un mismo controlador puede encargarse tanto de la regulación como de la señalización y las acciones auxiliares del proceso.
+
+Por último, el autotuning ha demostrado ser una herramienta muy práctica para obtener unos parámetros PID adecuados sin necesidad de calcularlos a mano, lo que simplifica mucho la puesta en marcha del sistema.
