@@ -1,0 +1,26 @@
+\fsection{Descripción del proyecto}
+El cliente es un centro logístico de comercio electrónico en el que los productos llegan a la zona de preparación
+de pedidos amontonados y sin orden dentro de contenedores. Hoy en día el picking se hace a mano: un operario coge
+cada pieza del contenedor y la deja en la bandeja de salida. Es un trabajo repetitivo y poco ergonómico, que se
+convierte en un cuello de botella en los picos de demanda. Los sistemas robotizados convencionales que ha
+valorado no le sirven, porque necesitan que las piezas lleguen ordenadas o en una posición conocida.
+
+En la primera visita el cliente nos enseña los contenedores tal como llegan y nos plantea sus necesidades:
+\begin{itemize}
+	\item Automatizar la recogida de piezas directamente desde el contenedor, sin tener que ordenarlas ni
+	      posicionarlas antes, porque los productos cambian con frecuencia y no quiere utillajes específicos
+	      para cada uno.
+	\item Que la solución pueda convivir con personas en el mismo espacio de trabajo, sin grandes vallados.
+\end{itemize}
+
+Para dar respuesta a estas necesidades, el presente proyecto desarrolla un sistema de selección automática de piezas
+en entornos no estructurados, conocido como bin picking, combinando visión artificial 3D, inteligencia
+artificial y robótica colaborativa. La solución se basa en la plataforma SIMATIC Robot Pick AI de Siemens,
+una solución preentrenada que permite detectar objetos en un contenedor desordenado, calcular el punto óptimo
+de agarre y guiar al robot para ejecutar la operación de forma autónoma, sin necesidad de posicionamiento
+previo de las piezas. Al usarse un robot colaborativo, la celda puede compartir espacio con los operarios,
+aunque se realiza la correspondiente evaluación de riesgos de la aplicación.
+
+Cabe destacar que el proyecto parte del modelo de IA preentrenado proporcionado por Siemens, por lo que
+el entrenamiento o reentrenamiento del modelo queda fuera del alcance de este trabajo. El foco se centra
+en la integración, configuración y puesta en marcha del sistema completo.

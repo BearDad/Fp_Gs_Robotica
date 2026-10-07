@@ -1,0 +1,20 @@
+\clearpage
+\fchapter{Objeto}
+
+
+El objeto del presente proyecto es la integración, configuración y puesta en marcha de un sistema de bin picking inteligente basado en la plataforma SIMATIC Robot Pick AI de Siemens, combinando robótica colaborativa, visión artificial 3D e inteligencia artificial aplicada a la detección y manipulación de piezas en entornos no estructurados. El sistema resultante constituye una solución completa de automatización flexible, capaz de operar sin necesidad de posicionamiento previo de las piezas.
+Para ello me propongo alcanzar los siguientes objetivos:
+
+\begin{itemize}
+	\item Configurar y verificar la comunicación entre todos los elementos del sistema (cámara Orbbec Femto Mega, IPC, PLC S7-1500 y robot UR3e) mediante protocolo Profinet en la red 192.168.15.xxx.
+
+	\item Realizar la configuración del software PickAI en el IPC, incluyendo la calibración de la cámara, la calibración del robot y la configuración de la herramienta de agarre.
+
+	\item Adaptar el programa de TIA Portal proporcionado en la nota de aplicación de Siemens, ajustando los parámetros del DB4 (dirección IP del IPC y medidas del contenedor) a las características del equipamiento disponible.
+
+	\item Adaptar el programa del robot UR3e, ajustando los puntos de paso y las posiciones de depósito al entorno de trabajo real.
+
+	\item Validar el funcionamiento completo del sistema realizando pruebas de detección, agarre y depósito de piezas, verificando que el robot opera de forma autónoma hasta vaciar el contenedor.
+\end{itemize}
+
+La identificación individual de las piezas para clasificarlas (mediante RFID o códigos QR) queda fuera del alcance de este proyecto y se plantea como ampliación futura en el apartado de posibilidades de innovación y mejoras.

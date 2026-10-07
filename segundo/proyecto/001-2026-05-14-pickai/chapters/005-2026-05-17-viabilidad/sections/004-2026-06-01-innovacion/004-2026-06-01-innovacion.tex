@@ -1,0 +1,8 @@
+\fsection{Posibilidades de innovación y mejoras}
+Una vez finalizado el proyecto, se proponen las siguientes mejoras para trabajos futuros:
+
+Identificación y clasificación de piezas: añadir una estación de lectura fija junto a la celda. Tras el agarre, el robot presenta la pieza ante el lector, el PLC recibe su identificador y decide en qué ubicación de destino la deposita. La identificación puede hacerse con un lector de códigos QR o DataMatrix con Profinet (por ejemplo, SIMATIC MV500), con etiquetas impresas en la base o en un lateral de la pieza, o con un lector RFID como el SIMATIC RF260R (ISO 15693), que no necesita visión directa del tag. En ambos casos la integración se limita a un FB nuevo en el programa principal del PLC y a un punto de paso adicional en el programa del robot, sin modificar el sistema de Siemens. Se descarta leer los códigos con la propia cámara Femto Mega, ya que está gestionada por el software de Pick AI y el código podría quedar oculto en el contenedor.
+
+
+Incorporación de un eje traslacional: añadir un séptimo eje lineal al robot para ampliar su alcance y permitir trabajar con múltiples contenedores simultáneamente, tal como se ha implementado en alguno de los centros participantes en el proyecto de innovación.
+Reentrenamiento del modelo de IA con piezas propias: el modelo preentrenado de Siemens está optimizado para un conjunto limitado de geometrías. Entrenar el modelo con piezas específicas del entorno productivo objetivo (por ejemplo, productos agroalimentarios o componentes de maquinaria agrícola) mejoraría significativamente la tasa de detección y la robustez del sistema en condiciones reales.

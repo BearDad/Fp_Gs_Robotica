@@ -1,0 +1,16 @@
+\newcommand{\headern}[3]{%
+	\fancypagestyle{plain}{%
+		\fancyhf{} % clear everything
+		% \fancyfoot[C]{Página \thepage\ de \pageref{LastPage}} % center footer
+		\fancyfoot[R]{Página \thepage/\pageref{LastPage}} % center footer
+		% \fancyfoot[R]{\small{#2}} % right footer
+		\fancyfoot[L]{\small{#2}} % right footer
+		% \fancyfoot[L]{\small{#3}} % left footer
+		\fancyhead[R]{\small{#1}} % right header
+		\fancyhead[L]{\small{\today}} % left header
+		\renewcommand{\headrulewidth}{1pt} % header rule
+		\renewcommand{\footrulewidth}{1pt} % footer rule
+	}%
+	\pagestyle{plain} % apply style from this point onward
+}
+\addto\captionsspanish{\renewcommand{\contentsname}{Índice}}
