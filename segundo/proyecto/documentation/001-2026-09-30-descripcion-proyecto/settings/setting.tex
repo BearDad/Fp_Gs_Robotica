@@ -1,0 +1,17 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Ajustes propios de la prememoria
+\usetikzlibrary{positioning, fit, backgrounds}   % esquema de la instalación
+
+% Cabecera de la prememoria (sustituye a la portada: el documento es de una o dos hojas)
+\newcommand{\cabeceraprememoria}[3]{%
+	\begin{center}
+		{\Huge\bfseries PREMEMORIA}\\[0.5em]
+		{\large #1}\\[1em]
+		\begin{tabular}{rl}
+			\textbf{Alumno:} & #2 \\
+			\textbf{Tutor:}  & #3 \\
+			\textbf{Curso:}  & 2° CFGS Automatización y Robótica Industrial \\
+		\end{tabular}
+	\end{center}
+	\vspace{1em}
+}

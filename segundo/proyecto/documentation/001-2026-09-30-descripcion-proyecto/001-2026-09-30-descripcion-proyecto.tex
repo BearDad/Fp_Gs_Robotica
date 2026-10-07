@@ -1,0 +1,38 @@
+\documentclass[spanish,openany]{report}
+\usepackage{wrapfig}
+\input{/home/kuma/git/Clase/template/preamble.tex}
+\input{./settings/setting.tex}
+\input{/home/kuma/git/Clase/template/macros.tex}
+\input{/home/kuma/git/Clase/template/letterfonts.tex}
+
+\date{\today}
+\usepackage{microtype}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%                                    HEADER
+%----------------------------------------------------------------------------------------
+\header{IES Jorge Manrique. Dpto. Electricidad-Electrónica}
+{Daniel Carbajales Soto}
+{2° CFGSARI}
+\setcounter{page}{1}
+
+\cabeceraprememoria{Proyecto intermodular de automatización y robótica industrial}
+{Daniel Carbajales Soto}
+{Francisco Romero Quílez}
+
+%----------------------------------------------------------------------------------------
+%	                            DOCUMENT
+%----------------------------------------------------------------------------------------
+\subimport{./sections/001-2026-09-30-titulo/}{001-2026-09-30-titulo.tex}
+\subimport{./sections/002-2026-09-30-objetivo/}{002-2026-09-30-objetivo.tex}
+\subimport{./sections/003-2026-09-30-descripcion-inicial/}{003-2026-09-30-descripcion-inicial.tex}
+\subimport{./sections/004-2026-09-30-instalacion/}{004-2026-09-30-instalacion.tex}
+\subimport{./sections/005-2026-09-30-esquema/}{005-2026-09-30-esquema.tex}
+\subimport{./sections/006-2026-09-30-especificaciones/}{006-2026-09-30-especificaciones.tex}
+\subimport{./sections/007-2026-09-30-ampliaciones/}{007-2026-09-30-ampliaciones.tex}
+
+\mbox{}\label{Last Page}
+
+\end{document}

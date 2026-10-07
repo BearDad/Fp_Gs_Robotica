@@ -1,0 +1,17 @@
+\fsection{Posibles ampliaciones}
+El alcance del proyecto es la celda de bin picking descrita. Sobre ella se plantean las siguientes ampliaciones,
+que quedan como trabajo futuro:
+
+\begin{itemize}
+	\item Identificación y clasificación de piezas: trabajar con piezas de distintos tipos en el mismo contenedor
+	      y depositar cada una en una bandeja según su tipo, usando las bandejas 2 y 3 que ya están previstas en la
+	      mesa. Para ello se añade una estación de lectura fija junto a la celda: tras el agarre, el robot presenta
+	      la pieza ante el lector, el PLC recibe su identificador y decide en qué bandeja la deposita. La identificación puede hacerse con un lector de códigos QR o DataMatrix con
+	      Profinet (por ejemplo, SIMATIC MV500), con etiquetas en la base o en un lateral de la pieza, o con un lector
+	      RFID como el SIMATIC RF260R, que no necesita visión directa del tag. En ambos casos basta con un FB nuevo en
+	      el programa del PLC y un punto de paso más en el programa del robot, sin modificar el sistema de Siemens.
+	\item Eje traslacional: añadir un séptimo eje lineal al robot para ampliar su alcance y trabajar con varios
+	      contenedores.
+	\item Reentrenamiento del modelo de IA con piezas propias del entorno productivo, para mejorar la tasa de
+	      detección con geometrías distintas a las del modelo preentrenado.
+\end{itemize}

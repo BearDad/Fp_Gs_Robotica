@@ -1,0 +1,29 @@
+\fsection{Especificaciones generales}
+\fsubsection{Material}
+Para el desarrollo del proyecto se utilizará el siguiente equipamiento:
+\begin{itemize}
+	\item Cámara de profundidad 3D Orbbec Femto Mega (imagen en color y nube de puntos).
+	\item PC industrial Siemens SIMATIC IPC BX-59A con el software SIMATIC Robot Pick AI.
+	\item PLC Siemens S7-1500, CPU 1516-3 PN/DP (firmware V2.9).
+	\item Robot colaborativo Universal Robots UR3e (6 ejes).
+	\item Pinza de vacío eléctrica OnRobot VGC10 como efector final (vacío generado por bomba integrada, sin aire comprimido).
+	\item PC de ingeniería con una IP en el rango 192.168.15.xxx, desde el que se programa el PLC y se accede
+	      al frontend web del IPC.
+	\item Cableado de red Profinet.
+	\item Patrón de calibración impreso en folio, para calibrar la cámara y el robot.
+	\item Mesa de trabajo móvil (con ruedas) de 1400 × 800 mm, sobre la que se montan el robot, el contenedor y
+	      las bandejas.
+	\item Contenedor de piezas de 345 × 270 × 60 mm (interior de 325 × 250 × 55 mm).
+	\item Bandeja de colocación para las piezas recogidas, más otras dos reservadas para la ampliación de
+	      clasificación.
+\end{itemize}
+
+\fsubsection{Software}
+\begin{itemize}
+	\item TIA Portal V18 o superior de Siemens, para la programación del PLC a partir del proyecto de la nota de aplicación
+	      \textit{Robot Pick AI Pro Machine Vision Software for AI-based Universal Bin Picking}.
+	\item SIMATIC Robot Pick AI (contenedores Docker en el IPC: drivers de la cámara, frontend web de
+	      configuración y modelo de IA preentrenado).
+	\item Orbbec Viewer, para dejar la cámara con la configuración que espera el software del IPC.
+	\item PolyScope de Universal Robots, para el programa (\texttt{.urp}) y el archivo de instalación del robot.
+\end{itemize}

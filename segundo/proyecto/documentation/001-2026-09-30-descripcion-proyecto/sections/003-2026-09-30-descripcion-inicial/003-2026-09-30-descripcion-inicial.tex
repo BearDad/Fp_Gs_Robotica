@@ -1,0 +1,21 @@
+\fsection{Descripción inicial}
+El cliente es un centro logístico de comercio electrónico en el que los productos llegan a la zona de preparación
+de pedidos amontonados y sin orden dentro de contenedores. Hoy en día el picking se hace a mano: un operario coge
+cada pieza del contenedor y la deja en la bandeja de salida. Es un trabajo repetitivo y poco ergonómico, que se
+convierte en un cuello de botella en los picos de demanda. Los sistemas robotizados convencionales que ha
+valorado no le sirven, porque necesitan que las piezas lleguen ordenadas o en una posición conocida.
+
+En la primera visita el cliente nos enseña los contenedores tal como llegan y nos plantea sus necesidades:
+\begin{itemize}
+	\item Automatizar la recogida de piezas directamente desde el contenedor, sin tener que ordenarlas ni
+	      posicionarlas antes, porque los productos cambian con frecuencia y no quiere utillajes específicos
+	      para cada uno.
+	\item Que la solución pueda convivir con personas en el mismo espacio de trabajo, sin grandes vallados.
+\end{itemize}
+
+Para dar respuesta a estas necesidades se propone una celda robotizada de bin picking: una cámara 3D y un modelo
+de inteligencia artificial detectan las piezas del contenedor y calculan el mejor punto de agarre, un robot
+colaborativo las recoge con una pinza de vacío y las deposita en la bandeja de colocación, mientras un PLC coordina
+todo el ciclo. El modelo de IA es el preentrenado por
+Siemens, por lo que su entrenamiento queda fuera del alcance del proyecto; el trabajo se centra en la
+integración, la programación y la puesta en marcha del conjunto.
